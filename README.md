@@ -26,29 +26,31 @@ you need to download node.js first
    npm install
    ```
 
-   Supported variable:
-   - `PORT` (defaults to `3000`)
 
 4. Run in development (starts Express API + Vite frontend middleware on port 3000):
    ```bash
    npm run dev
    ```
+will open front end on http://localhost:3000
+ctrl + c and y to close 
 
-5. Build for production & run:
-   ```bash
-   npm run build
-   NODE_ENV=production npm start
-   ```
-
-6. Run backend tests:
+5. Run backend tests:
    ```bash
    npm test
    ```
 
-7. Type-check:
+   6. Type-check:
    ```bash
    npm run lint
    ```
+
+7. Build for production & run:
+   ```bash
+   set NODE_ENV=production&& npm start
+   ```
+
+
+
 
 ## Demo User Scoping
 
