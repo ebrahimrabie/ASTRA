@@ -9,35 +9,45 @@ ASTRA is a read-only decision-support **prototype** for astronaut health and mis
 
 ## Setup & Running
 
-1. Install dependencies:
+1.get clone:
+   ```bash
+   git clone https://github.com/ebrahimrabie/ASTRA.git
+   ```
+
+2. open astra:
+   ```bash
+   cd ASTRA
+   ```
+
+3. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Configure environment (optional):
+4. Configure environment (optional):
    ```bash
    cp .env.example .env
    ```
    Supported variable:
    - `PORT` (defaults to `3000`)
 
-3. Run in development (starts Express API + Vite frontend middleware on port 3000):
+5. Run in development (starts Express API + Vite frontend middleware on port 3000):
    ```bash
    npm run dev
    ```
 
-4. Build for production & run:
+6. Build for production & run:
    ```bash
    npm run build
    NODE_ENV=production npm start
    ```
 
-5. Run backend tests:
+7. Run backend tests:
    ```bash
    npm test
    ```
 
-6. Type-check:
+8. Type-check:
    ```bash
    npm run lint
    ```
