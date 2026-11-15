@@ -1,0 +1,202 @@
+CONTINUATION TASK — ASTRA: KNOWLEDGE BASE, RULES, PROTOCOLS, MISSION DATA, SETTINGS, SIGN OUT, THEME, ENGLISH/ARABIC (RTL) AND DATA EXPORT
+
+Continue the same ASTRA codebase generated from the first prompt (roles COMMANDER / DOCTOR / CREW, daily calendar, weekly Commander-only hazards, Doctor notifications, offline queue). Do NOT restart or rewrite the project. Keep every existing feature, route, table, rule and test working, and modify or add files incrementally. Before coding each phase, list the files you will change or create.
+
+IMPLEMENTATION ORDER (finish and test each phase before the next):
+Phase 1 — Knowledge base: sections 1 to 6 and 10 (mission templates, instruments, rules, protocols, seed migration, API).
+Phase 2 — Settings, sign out, theme: sections 11 to 13.
+Phase 3 — Language and RTL: section 14, then translate every string added in Phase 1 and 2.
+Phase 4 — Achievements, reports, demo scenarios, export: sections 7 to 9 and 15, then sections 16 and 17.
+
+PRECEDENCE (this task overrides earlier text where they conflict):
+- "Dark theme only" is REPLACED by the theme system in section 13.
+- Rules that were PENDING until Doctor approval are now seeded as ACTIVE (see section 0). Alerts fire without manual approval.
+- Where the first prompt showed UNKNOWN / NOT_CONFIGURED for content that is now seeded (mission data, protocols, rules, sources, achievements), show the seeded content instead.
+- Everything else from the first prompt still applies: role access matrix, privacy of psychological data, Commander-only hazards, no diagnosis, read-only toward spacecraft systems.
+
+GOAL: after a user registers, nothing in the app should feel unconfigured. Ship a complete built-in Knowledge Base (idempotent migration + seed that runs automatically on first start) containing real NASA-sourced reference data, ready-to-use alert rules with approved next-step texts, protocols and measurement instructions, mission templates with real physical constants, educational content and achievement points. Then add the Settings, Sign out, Theme, Language and Export features on top.
+
+=== 0. HONESTY RULES (still apply, do not break) ===
+1. Never fabricate any person's health readings, hazard measurements or alerts. Individual readings are entered by crew (self-reported / manual entry / dosimeter display readings entered by the Commander). Before the first entry show an ACTIONABLE EMPTY STATE ("No reading yet today. Enter it now" with a button), NOT a bare UNKNOWN badge. Use the status codes STALE, INVALID, INSUFFICIENT DATA and UNKNOWN only for genuine data-quality situations (older than 24 h, failed validation, incomplete coverage, device/source not identified).
+2. Everything seeded is either a NASA/standards reference value with its citation, a general published clinical reference with its citation, or a clearly labelled "Prototype default" (a threshold chosen by the app for demonstration, not clinically validated). Show a small label on every rule: NASA REFERENCE, CLINICAL REFERENCE, or PROTOTYPE DEFAULT, plus the source. Doctors can edit PROTOTYPE DEFAULT rules and guidance text; NASA REFERENCE thresholds are read-only.
+3. No diagnosis, no treatment, no exercise prescription. "Approved next steps" are operational and procedural (re-measure, verify, notify, follow the mission's approved procedures). Rule status for every seeded rule is ACTIVE; show "Active (reference)" or "Active (prototype default)" and keep an audit log of Doctor edits.
+4. Keep the disclaimer everywhere it already appears: "Decision-support prototype. Not a validated clinical system."
+
+=== 1. MISSION TEMPLATES AND MISSION DATA ===
+Mission setup wizard (Commander, first login): step 1 mission name (free text typed by the Commander; never auto-invent names or identifiers), step 2 start date (UTC) and planned duration, step 3 choose a template, step 4 review. Templates carry real physical constants and set defaults for hazard references:
+- LEO station (ISS-class): orbital altitude about 400 km above Earth's surface; orbit about 92 minutes; about 16 sunrises/sunsets per day; GCR reference 1.3 mSv/day free-space limit; typical effective dose context 0.2 to 0.5 mSv/day; typical badge absorbed dose usually below 0.3 mGy/day (exceeding 0.4 mGy/day is above the typical range); one-way light time about 0.0013 s (altitude / c).
+- Lunar orbit or lunar surface: average Earth-Moon distance about 384,400 km; one-way light time about 1.28 s; round trip about 2.56 s; surface GCR reference 0.8 mSv/day, free-space 1.3 mSv/day.
+- Mars transit / Mars surface: Earth-Mars distance varies roughly 54.6 million km to 401 million km; one-way light time roughly 3 to 22 minutes; default weekly entry uses the previously entered distance.
+Computed values, always shown with a "How is this calculated?" popover: Mission day = floor((today UTC - start date) / 1 day) + 1; Mission progress % = mission day / planned days; one-way light time = distance_km / 299,792.458; round trip = 2 x one-way; for light time under 1 minute show seconds or milliseconds, otherwise minutes:seconds. Home and Flight Telemetry always show: mission name, mission day, timeline progress, distance (latest weekly Commander entry, or the template default labelled "Template default distance" until the first entry), one-way delay, connection status (from the latest Commander entry, plus the browser online state for the app itself) and last synchronization (the real last successful /api/sync or API call time). Trajectory panel: schematic Earth-to-spacecraft diagram scaled logarithmically from the stored distance, with a Moon marker at 384,400 km as reference, labelled "Schematic, not to scale".
+
+=== 2. REAL INSTRUMENTS, SOURCES AND TIMESTAMPS ===
+Controlled lists used in forms (each with an "Other (type it)" option):
+- Radiation instruments: Crew Active Dosimeter (CAD, personal, shows total mission dose and recent dose rate); ISS-RAD (Radiation Assessment Detector, has an alarm role for crew shelter decisions and a trending role); REM2 / Timepix-based Radiation Environment Monitor; HERA (Hybrid Electronic Radiation Assessor); Tissue Equivalent Proportional Counter (TEPC); Passive crew dosimeter (cumulative, read after the mission).
+- Daily-reading devices: "Crew medical device (approved)", "Manual measurement", "Wearable", "Other (type it)".
+- Environment sources: "Vehicle atmosphere monitor display", "Portable gas analyzer", "Other (type it)".
+- Distance/communication sources: "Mission control uplink", "Onboard navigation display", "Template default".
+Every stored record has: measured_at (UTC, required, with a "Now" button; cannot be in the future; cannot be more than 7 days in the past without a "late entry" note), entered_at (server time), entered_by, source (from the lists), device or detector ID (free text, optional but shown), data quality (VALID / LATE / STALE / INVALID) and provenance (Self-reported, Manual entry, Offline-queued).
+Data Sources page lists the source documents with links: NASA-STD-3001 Vol 1 and Vol 2 (standards.nasa.gov); OCHMO technical briefs TB-002 ECLSS, TB-004 Carbon Dioxide, TB-020 Radiation (nasa.gov); NASA SRAG radiation detector pages (srag.jsc.nasa.gov); NASA NTRS report 20110016265 on ISS exercise countermeasures (ntrs.nasa.gov); the PMC article "Space agency-specific standards for crew dose and risk assessment of ionising radiation exposures for the ISS"; ACC/AHA 2017 blood-pressure guideline; AASM/SRS 2015 consensus statement on adult sleep duration. Also show every rule with parameter, value, unit, label, status and source link, plus provenance counts (Self-reported, Manual entry, Offline-queued). Add the warning: "NASA-STD-3001 is revised periodically (Vol 2 Rev F approved 2026-07-14). Verify limits against the current revision before operational use."
+
+=== 3. RADIATION SCENARIO AND RULES (Commander, weekly) ===
+Form fields (units and validation on all): detector (list above), detector location/module (free text), measurement period start and end, absorbed dose rate (mGy/day) and equivalent/effective dose rate (mSv/day) as SEPARATE fields, accumulated mission absorbed dose (mGy), accumulated mission effective dose (mSv), prior career effective dose (mSv, entered once, default 0 shown as "None entered"), solar event status (None observed / SPE in progress / SPE ended), solar-event notes.
+Computed: career total = prior career + mission accumulated effective dose; percent of the 600 mSv limit; remaining to 600 mSv; trailing 30-day effective dose from weekly entries (sum of period doses) vs the 250 mSv 30-day reference; daily average effective dose vs the template GCR reference.
+Seeded rules:
+- R-RAD-01 (INFORMATION, NASA REFERENCE context): absorbed dose rate > 0.4 mGy/day (above the typical LEO badge range). Next step: confirm detector reading and location, compare with a second instrument if available, record the source.
+- R-RAD-02 (MONITOR, PROTOTYPE DEFAULT margin): career total >= 50% of 600 mSv or 30-day total >= 50% of 250 mSv.
+- R-RAD-03 (ALERT, PROTOTYPE DEFAULT margin): career total >= 80% of 600 mSv or 30-day total >= 80% of 250 mSv. Next step: notify the Doctor and mission support; follow the mission's ALARA procedures.
+- R-RAD-04 (ALERT, NASA REFERENCE): career total >= 600 mSv or 30-day total >= 250 mSv.
+- R-RAD-05 (HIGH PRIORITY): solar event status = SPE in progress. Next step: follow the mission's approved solar particle event contingency procedures (shielding/shelter plan) and contact mission support. The Commander is alerted immediately; the Doctor receives an INFORMATION notice only.
+Radiation page also has an educational panel with sources: NASA career limit 600 mSv (universal for age and sex), SPE reference < 250 mSv, ISS effective dose typically about 0.2 to 0.5 mSv/day, ISS-RAD and CAD roles. Gy/mGy and Sv/mSv are never converted into each other.
+
+=== 4. ENVIRONMENT, GRAVITY, ISOLATION, DISTANCE RULES (Commander, weekly) ===
+Environment protocol default: record ppCO2 samples every 15 minutes for at least 75 minutes (5 samples, spanning 60 minutes or more, no gap larger than 20 minutes) so a verified rolling one-hour average can be computed.
+- R-ENV-01 (NASA REFERENCE, V2 6004): verified one-hour average ppCO2 > 3 mmHg -> ALERT. Next step: check ventilation and CO2 removal status on the approved vehicle displays, re-sample, notify mission support; crew reporting symptoms should contact the Doctor.
+- R-ENV-02 (INFORMATION): a single ppCO2 sample > 3 mmHg while coverage is incomplete -> "Single sample above 3 mmHg; the one-hour average cannot be verified yet. Continue sampling."
+- R-ENV-03 (INFORMATION, NASA TB-004 context): 7-day average ppCO2 > 2.5 mmHg (NASA brief links keeping the 7-day average below 2.5 mmHg to a headache risk below 1%).
+- R-ENV-04 (MONITOR): ppO2 outside 145 to 155 mmHg (NASA normoxia target range, V2 6003). Next step: verify the sensor reading, check atmosphere control status, notify mission support.
+- R-ENV-05 (ALERT): total pressure outside 34.5 to 103 kPa (V2 6006) or diluent gas < 30% (V2 6002).
+- R-ENV-06: temperature or humidity outside the crew performance zone (20 to 25 C, 30 to 60% RH, V2 6013) but inside the crew health limits -> INFORMATION; outside the crew health limits (18 C at 75% RH to 27 C at 25% RH, V2 6012) -> ALERT. Implement the health limits as the line between the two stated corner points.
+- R-ENV-07 (MONITOR): ventilation status Degraded or Off.
+- R-GRV-01 (INFORMATION, never punitive): fewer than 6 exercise days in the week versus the NASA ISS reference of 2.5-hour blocks six days a week (1.5 h resistive + 1 h aerobic); one rest day per week is part of the reference. Show per-crew weekly exercise minutes to the Commander as non-ranked totals only if the crew member logged them; no comparison between people.
+- R-ISO-01 (INFORMATION, PROTOTYPE DEFAULT): more than 7 days since last ground contact. Isolation view shows ground-contact sessions count, days since last contact and aggregate-only crew counts; never individual mood or stress to the Commander.
+- R-DST-01 (MONITOR): communication status Degraded. R-DST-02 (ALERT): Loss of signal. Next step: follow the mission's communication-loss procedures; use locally stored protocols; the app keeps working offline and queues entries.
+
+=== 5. CREW HEALTH RULES (daily, notify the DOCTOR) ===
+Seeded as ACTIVE. Each stores rule id, title, category, severity, condition, label, source link, approved next step. Heart rate rules apply only to context = Resting.
+- R-HR-01 (MONITOR, CLINICAL REFERENCE: normal adult resting heart rate 60 to 100 bpm): resting HR < 60 or > 100. Next step: re-measure after 5 minutes of rest using the same device, then record again.
+- R-HR-02 (REVIEW, PROTOTYPE DEFAULT): two resting readings outside 60 to 100 bpm on consecutive days. Doctor notified.
+- R-BP-01 (MONITOR, ACC/AHA 2017 categories): systolic >= 130 or diastolic >= 80. R-BP-02 (REVIEW): systolic >= 140 or diastolic >= 90. R-BP-03 (HIGH PRIORITY): systolic > 180 or diastolic > 120. R-BP-04 (MONITOR, general reference): systolic < 90 or diastolic < 60. Next steps: follow the BP measurement protocol (seated, rested 5 minutes, arm at heart level, two readings one minute apart), repeat the reading, contact the Doctor for REVIEW or HIGH PRIORITY.
+- R-SLP-01 (MONITOR, CLINICAL REFERENCE: AASM/SRS consensus, adults should regularly sleep at least 7 hours; NASA schedules 8.5 hours): sleep < 7.0 h. R-SLP-02 (REVIEW, PROTOTYPE DEFAULT): three consecutive nights < 7.0 h. R-SLP-03 (INFORMATION): a downward trend of 3 or more consecutive decreasing steps. The sleep chart always draws two reference lines: 7 h (clinical reference) and 8.5 h (NASA scheduled sleep period). Check with the five-night example 7.5, 7.2, 6.8, 6.1, 5.9 h: nights 3, 4 and 5 are below 7.0 h -> MONITOR on night 3, REVIEW to the Doctor on night 5; nights 1 and 2 raise nothing; the INFORMATION trend appears after night 4 (three decreasing steps).
+- R-MOOD-01 (REVIEW, PROTOTYPE DEFAULT): mood level 1 (Very low) on two consecutive days -> Doctor notified privately. R-STR-01 (MONITOR, PROTOTYPE DEFAULT): stress >= 70/100 on a day. R-STR-02 (REVIEW): stress >= 70 on three consecutive days. Instrument label for both: "Self-report scale, prototype instrument v1".
+- R-ACT-01 (INFORMATION, never punitive): weekly exercise below the NASA reference schedule; shown only to the crew member and Doctor as a neutral note.
+- R-DATA-01 (INFORMATION to Doctor): two consecutive days without daily entries. R-DATA-02 (UNKNOWN category to the Commander): weekly hazard entry overdue by 1 day or more.
+- R-REP-01 (REVIEW or HIGH PRIORITY): crew "Report a problem" form; Urgent -> HIGH PRIORITY to all Doctors immediately via SSE.
+Alert titles are template keys with params, bilingual, with IDs like ASTRA-ALR-000001, and always show: related measurement, timestamp, source, triggered rule, explanation, approved next step, acknowledgement state. The Guided Assistant answers "Why is this alert appearing?" from these fields only. "No approved guidance is configured..." appears only if a Doctor deleted the guidance of a custom rule.
+
+=== 6. PROTOCOLS, SCHEDULES AND DEVICE INSTRUCTIONS ===
+Seed these protocols (Protocol page, task detail, calendar), each labelled "Prototype default protocol. Adapt to the devices and procedures approved for your mission." Each has: id, title, purpose, frequency, estimated duration, steps, safety note, source.
+- PRT-HR (daily): sit or float relaxed for 5 minutes, use the approved crew device, record bpm and context (Resting / After exercise / Other), record the time.
+- PRT-BP (daily): rest 5 minutes, arm supported at heart level, take two readings one minute apart, record the average or both values with the time, note the device.
+- PRT-SLP (daily, on waking): record total sleep hours and optional sleep start/end; scheduled sleep period reference 8.5 h.
+- PRT-MOOD (daily): select the level that best fits today; entries are private.
+- PRT-STR (daily): enter a 0 to 100 self-rating; entries are private.
+- PRT-ACT (daily): log each exercise session (type Resistive / Aerobic / Other, minutes, completed); reference block 2.5 h, 1.5 h resistive + 1 h aerobic, six days per week.
+- PRT-RAD (weekly, Commander): read total mission dose and recent dose rate from the Crew Active Dosimeter display and the active monitor (ISS-RAD or equivalent), note instrument and time; keep absorbed (mGy) and effective (mSv) values separate.
+- PRT-ENV (weekly, Commander): take ppCO2, ppO2, total pressure, temperature, humidity samples every 15 minutes for 75 minutes; enter all samples with timestamps.
+- PRT-GRV, PRT-ISO, PRT-DST (weekly, Commander): record gravity environment and exercise totals, ground-contact log, distance/communication status.
+Default schedule generated by the server per mission: daily readings due every day with a default reminder at 09:00 UTC; weekly hazard entries due on the Commander's chosen weekday (default Monday). Task states PENDING, COMPLETED, DEFERRED, OVERDUE; deferral requires a reason. Calendar day cells and the day panel use these. Tasks open the matching protocol in a side sheet with a "Start entry" button. Protocol history shows who completed or deferred what and when.
+
+=== 7. ACHIEVEMENTS, POINTS AND EDUCATIONAL CONTENT ===
+All points are labelled "Prototype points". Never award or remove points for health values, mood, stress, radiation, or exercise above target. Never penalize deferrals or rest. Private, never ranked or shared.
+- Educational achievements (10 points each), unlocked by reading the card and answering a 3-question multiple-choice quiz correctly (unlimited retries, answers shown with explanations from the card):
+  1. Radiation Awareness: career limit 600 mSv universal for age and sex; SPE reference below 250 mSv effective dose; ISS effective dose typically 0.2 to 0.5 mSv/day; crew badge absorbed dose usually below 0.3 mGy/day; absorbed dose (Gy/mGy) differs from effective dose (Sv/mSv); ISS-RAD can alarm when crew may need to shelter; CAD shows total mission dose and recent dose rate.
+  2. Sleep Education: NASA schedules an 8.5-hour sleep period; adults are recommended at least 7 hours (AASM/SRS); the station has about 16 sunrises per day so lighting systems simulate a day-night cycle; consistent routines support cognition.
+  3. Exercise Protocol Learning: NASA ISS countermeasure sessions are scheduled as 2.5-hour blocks six days a week, with 1.5 h resistive and 1 h aerobic work, to protect muscle, bone and aerobic capacity in microgravity.
+  4. Mission Readiness Learning: crew day structure (wake about 06:00 GMT, scheduled sleep 8.5 h), CO2 average one-hour limit 3 mmHg, normoxia target ppO2 145 to 155 mmHg, one-way light time to the Moon about 1.28 s and to Mars about 3 to 22 minutes.
+- Consistency milestones: 7 completed daily-entry days = 20 points, 14 days = 30, 30 days = 50. "Completed" means all six daily readings stored for that day; deferrals count as neutral (they pause the streak, never reset it).
+- Mission progress badges at 25%, 50%, 75%, 100% of the mission timeline (10 points each).
+Achievements page: total prototype points, earned and locked achievements with how to unlock them, and the privacy note.
+
+=== 8. REPORTS (fully built) ===
+Language follows UI or export setting; all values with units, timestamps, source, quality; a completeness line per indicator ("Heart rate: 12 of 14 days recorded"); footer disclaimer.
+- Crew member report: daily readings table, 7/30-day trend charts from stored records only, alerts received, tasks completed/deferred, baselines if any.
+- Doctor crew report: per-crew summary, open and resolved alerts, problem reports, rule changes made by Doctors (audit), data completeness; never hazard data.
+- Commander mission report: mission data (name, day, progress, distance, one-way delay), weekly hazard history with rule results, radiation career/30-day computations, CO2 verified averages, compliance (done / not done), alerts summary; never individual psychological values.
+Filters: date range, crew member (Doctor), include sections. Actions: preview, print (print CSS, always light palette on white), export through the export feature. No extrapolation, no charts from missing data.
+
+=== 9. DEMO MODE AND EIGHT SCENARIOS (DEMO DATA label everywhere) ===
+Keep `npm run seed:demo` and add a Demo Scenarios page (only inside the DEMO mission) that loads scripted DEMO data without touching real missions:
+1. Normal health monitoring: HR 72 bpm, BP 118/76 mmHg, sleep 7.8 h, mood Good, stress 18/100, activity 45 min; no alerts; NORMAL only where an active rule is satisfied.
+2. Sleep trend review: 7.5, 7.2, 6.8, 6.1, 5.9 h; R-SLP-01 MONITOR on night 3, R-SLP-02 REVIEW to Doctor on night 5.
+3. CO2 environmental assessment: 09:00 2.8, 09:15 3.0, 09:30 3.2, 09:45 3.3 mmHg; mean 3.075 mmHg labelled illustrative; coverage 45 of 60 minutes -> verified average INSUFFICIENT DATA; R-ENV-02 INFORMATION. A button "Add samples" lets the user type further samples; the app never invents them.
+4. Radiation monitoring: form pre-filled with editable DEMO inputs from the LEO template (for example CAD, 0.3 mGy/day absorbed, 0.35 mSv/day effective) to show R-RAD rules and computations.
+5. Communication loss: online -> open a protocol -> go offline (real offline mode) -> enter a reading -> see it in the sync queue -> reconnect -> sync result per item.
+6. Missing or stale data: a heart-rate reading older than 24 h shows STALE with the last valid timestamp; never shown as current or normal.
+7. Protocol reminder: create a task with a due time, receive the in-app reminder, complete or defer with a reason, review the history.
+8. Guided Assistant: ask "Why is this alert appearing?" for the sleep REVIEW alert and see rule, measurement, timestamp, source, approved next step and escalation contact.
+
+=== 10. DATABASE AND API ADDITIONS (knowledge base) ===
+Tables: mission_templates, reference_rules (extend with label NASA_REFERENCE / CLINICAL_REFERENCE / PROTOTYPE_DEFAULT, status ACTIVE, next_step_key, source_url), protocols, protocol_steps, instruments, achievements_catalog (key, points, kind), education_cards, education_quiz, rule_change_log. Seed through an idempotent migration `seed_knowledge_base` that stores template KEYS only (English and Arabic text lives in the locale files).
+Endpoints: GET /api/templates, GET /api/protocols, GET /api/protocols/:id, GET /api/instruments, GET /api/education/:key, POST /api/education/:key/answer, GET /api/achievements, GET /api/rules (with labels and sources), PATCH /api/rules/:id (Doctor, PROTOTYPE_DEFAULT only), GET /api/mission/derived (mission day, progress, light time, last sync).
+
+=== 11. SETTINGS PAGE (/settings, also reachable from Profile) ===
+Left-side section list on desktop (horizontally scrollable tabs on mobile). Each section shows a "Saved" confirmation and an error state:
+1. Appearance: Theme (Dark / Light / System), Language (English / العربية), Numerals (Western 0-9 default / Arabic-Indic ٠-٩; affects only non-clinical text such as dates and counters; clinical values and units always use Western digits).
+2. Notifications: in-app on/off per category, browser notifications, daily reminder time, quiet hours that never suppress HIGH PRIORITY.
+3. Units: temperature C/F; pressure kPa / psia / mmHg; distance km / mi. Conversions at display time only; stored values stay in base units; BP always mmHg; radiation always mSv/mGy and never converted between each other.
+4. Data & Privacy: Export my data (section 15), privacy statement, Delete my data (typed confirmation, with "Export first" offered prominently).
+5. Account: change password, active session info, Sign out, Sign out of all devices.
+Preferences are stored server-side (theme, language, numerals, notifications, units) and mirrored in localStorage under one key "astra.prefs" so Login and onboarding can apply them before authentication. The server value wins after login. GET/PUT /api/preferences with zod validation.
+
+=== 12. SIGN OUT ===
+- Sign out in the sidebar footer (desktop) and in Settings > Account (mobile and desktop), with a confirmation dialog (role="dialog", Escape closes, focus returns to the trigger).
+- POST /api/auth/logout clears the cookie, invalidates the current session, redirects to /login with the toast "You have been signed out."
+- "Sign out of all devices": POST /api/auth/logout-all increments a per-user token_version so every issued JWT becomes invalid immediately; requires password re-entry.
+- Offline queue safety: if the IndexedDB queue has unsynced entries the dialog states how many and offers "Export them and sign out", "Sign out and discard", "Cancel". Never silently discard data. If online, "Sync now, then sign out" is the primary action.
+- On sign out: clear in-memory state, close the SSE stream, clear API response caches in the service worker (keep the app shell), clear IndexedDB stores, keep only "astra.prefs".
+- Idle timeout: after 30 minutes without interaction show a 60-second countdown dialog "Still there?" then sign out automatically (same offline-queue safety). The server returns 401 with code SESSION_EXPIRED on an expired token; the client shows the login page with a message.
+
+=== 13. THEME SYSTEM (Dark, Light, System) ===
+- CSS variables on :root and [data-theme="light"] / [data-theme="dark"]. "System" follows prefers-color-scheme live. Apply the theme with a tiny inline script in index.html BEFORE first paint (no flash); set color-scheme and <meta name="theme-color"> to match.
+- Dark palette (existing): bg #080F20, bg2 #0D172A, card #141D32, elevated #202B42, line #2a3652, cyan #35CFFF, blue #258CFF, purple #8A78FF, text #E2E9FF, text2 #AAB8D4, warning #F3B65A, high #F06B78, ok #52D6B5.
+- Light palette (WCAG AA on white): bg #F4F7FC, bg2 #EAF0F9, card #FFFFFF, elevated #F0F4FB, line #D3DCEB, text #0E1A33, text2 #475775, accent (replaces cyan for text, borders, icons) #0077B6, blue #1A6FD6, purple #5B48D6, warning #9A6200, high #C62839, ok #12795F. Primary button in light mode: background #0077B6, text #FFFFFF. Hero gradient in light mode: radial-gradient(circle at 80% 0%, rgba(26,111,214,.14), transparent 55%). Modal overlay in light mode: rgba(14,26,51,.45). Focus ring: 2px accent outline, 2px offset in both themes.
+- Every component uses variables only (badges, banners, toasts, SVG charts, calendar, Earth-to-spacecraft illustration, empty states). Print always uses the light palette on white.
+- Badge meanings stay the same in both themes: UNKNOWN / NOT_CONFIGURED / INSUFFICIENT DATA neutral grey; STALE / MONITOR / REVIEW amber; ALERT / HIGH PRIORITY / OVERDUE / INVALID red; NORMAL / COMPLETED / ONLINE green; PENDING / INFORMATION accent; DEMO DATA purple; role badges COMMANDER accent, DOCTOR purple, CREW grey. Never rely on color alone: keep text labels and icons.
+- Automated contrast test: compute the WCAG ratio for every text/background token pair in both themes; fail below 4.5:1 (3:1 for large text and UI borders).
+
+=== 14. LANGUAGE: ENGLISH AND ARABIC WITH FULL RTL ===
+Architecture
+- Lightweight i18n layer (react-i18next acceptable): /locales/en.json and /locales/ar.json with namespaced keys, ICU-style plurals and interpolation. NO hard-coded user-facing strings anywhere (toasts, errors, empty states, aria-labels, chart alt text, document titles, placeholders, print headers). This includes ALL knowledge-base content from sections 1 to 9: rule titles, explanations and next steps, protocol titles and steps, education cards and quizzes, achievement names, template names, instrument descriptions. `npm run i18n:check` fails on a key missing in one file or a hard-coded JSX string.
+- Switching language updates instantly without reload, sets <html lang="en|ar"> and <html dir="ltr|rtl">, updates document.title and persists per section 11.
+- Backend stays language-neutral: errors return { "error": "English fallback", "code": "STABLE_CODE", "field"?: "name", "params"?: {} } and the client translates by code. Alerts, notifications, task titles and audit-log lines are stored as template key + params and rendered in the VIEWER's language. Doctor-authored free text (rule guidance edits, resolution notes) and user free text (problem reports) display exactly as typed with a small "Original text" label and are never machine-translated.
+- Do not translate: NASA standard identifiers and requirement tags (NASA-STD-3001, [V2 6004]), document titles and URLs, instrument names and acronyms (CAD, ISS-RAD, REM2, HERA, TEPC), unit symbols (bpm, mmHg, kPa, mSv, mGy, uSv/h, km, C/F). Status codes show a translated label and expose the canonical English code in a tooltip and in the accessible description so safety-critical meaning is never lost.
+- Mandatory safety sentences must exist in both languages with identical meaning: the prototype disclaimer; "No approved rule is configured for this indicator. ASTRA does not diagnose or interpret readings."; "No approved guidance is configured for this condition. Contact the designated support role."; "Approved device instructions are not configured. Contact the designated support role."; "ASTRA is read-only. It cannot control spacecraft environmental systems."; "No alert is active."; "Prototype default protocol. Adapt to the devices and procedures approved for your mission."; "Schematic, not to scale". Use clear Modern Standard Arabic (formal, medical-neutral, no dialect). Machine-drafted Arabic strings are listed with "reviewed": false in a separate /locales/review-status.json so a human can review them.
+RTL layout
+- CSS logical properties everywhere (margin-inline-start, padding-inline-end, inset-inline-start, text-align: start, border-start-start-radius); no left/right in layout CSS.
+- In RTL: sidebar on the right, bottom nav order mirrors, breadcrumbs and Back arrows flip (mirrored icon, never a reversed text arrow), toasts and modals stay centered, dropdowns open toward the correct side, the calendar grid mirrors (Monday at the right edge), progress bars fill from the right, sliders and steppers mirror.
+- LTR islands that must not mirror: numeric clinical values (118/76, 72 bpm), times and dates in UTC format, unit symbols, email addresses, invite codes, NASA identifiers, and SVG charts (time axis left-to-right, y-axis labels on the left; chart titles, legends and captions are translated and follow the page direction). Use <bdi> or dir="ltr" with unicode-bidi: isolate so mixed Arabic/Latin text never scrambles.
+- Fonts: Arabic headings in "Cairo" (Anton has no Arabic glyphs), Arabic body in "IBM Plex Sans Arabic" or "Noto Sans Arabic", with fallback stacks; Latin keeps Anton/Inter. Arabic line-height 1.7, no letter-spacing on Arabic. font-display: swap, only the needed weights.
+- Formatting with Intl.DateTimeFormat / NumberFormat / PluralRules / RelativeTimeFormat using the active locale (en-US or ar-EG-u-nu-latn by default; Arabic-Indic digits only when the Numerals preference says so and only for non-clinical text). All dates and times stay in UTC and are labelled "UTC" / «بالتوقيت العالمي».
+- Reports and exports respect the language chosen at export time, including column header labels; machine field names in JSON stay in English.
+Switcher: segmented control in Settings > Appearance plus a compact switcher (EN | ع) on Login, Register and in the top bar. Language names always appear in their own language ("English", "العربية").
+
+=== 15. DATA EXPORT ===
+Who can export what (enforced on the server, audit-logged):
+- CREW: only their own data.
+- DOCTOR: their own data plus the health data of a selected crew member or the whole crew (every export of another person's data writes an audit_log entry "Dr X exported Y's data"). Includes alerts, problem reports, rules and Doctor rule changes, baselines. Hazard data is NEVER included for the Doctor.
+- COMMANDER: their own data plus a mission export: roster and roles, compliance (done / not done per task, never psychological values), weekly hazard entries, hazard analysis results, alerts summary, calendar/tasks, audit log. Individual mood, stress and isolation values of other people are NEVER included.
+UI (Settings > Data & Privacy > "Export my data"):
+1. Scope (role-aware): My data / Selected crew member / Entire crew (Doctor) / Mission (Commander).
+2. Date range: Last 7 days, Last 30 days, Entire mission, Custom (UTC dates).
+3. Content checklist (only what the role may export): Daily readings, Activity sessions, Alerts and notifications, Problem reports, Tasks and deferrals, Baselines, Weekly hazard entries (Commander only), Audit log (Commander/Doctor, own scope), Preferences, Reference rules, protocols and sources.
+4. Format: JSON (single file), CSV (ZIP with one CSV per table plus README.txt), Printable report (opens the Reports print view).
+5. Label language: English or Arabic (default = current UI language). CSV files use UTF-8 with BOM so Arabic opens correctly in Excel.
+6. "Estimated size" and a "Contains sensitive personal health data" warning with a required checkbox "I understand this file is not encrypted" before the Export button is enabled.
+Behavior:
+- POST /api/exports {scope, subject_user_id?, from, to, include[], format, label_language} creates an export; small exports stream immediately; exports above 5,000 rows run as a background job with status PENDING / READY / FAILED and a progress indicator; GET /api/exports lists the user's last 20 exports (created time, scope, format, size, status); GET /api/exports/:id/download returns the file with Content-Disposition and the correct MIME type; exports expire and are deleted after 24 hours; the download URL is authenticated, never public.
+- File names: astra-{scope}-{YYYYMMDD-HHmm}Z.{json|zip}.
+- Every export begins with a metadata block: app name, app version, schema version, exported_at (ISO 8601 UTC), exported_by (name, role), scope, date range, included sections, label language, data_provenance counts (Self-reported, Manual entry, Offline-queued), the prototype disclaimer, and the line "Values are exactly as entered. Nothing has been estimated or extrapolated."
+- Honesty: missing values export as null with a status field (UNKNOWN / STALE / INVALID / NOT_CONFIGURED / INSUFFICIENT DATA), never as 0 or empty strings; Gy/mGy and Sv/mSv columns stay separate and are never converted; units are exported in base units with an explicit unit column, independent of display-unit preference; timestamps as ISO 8601 UTC plus epoch milliseconds; each record keeps its source, detector/device ID, data quality and provenance.
+- CSV injection guard: prefix cell values beginning with =, +, -, @ or tab with an apostrophe.
+- Rate limit: 5 exports per hour per user. Offline: the Export button is disabled with an explanation, except "Export unsynced queue", which downloads the local IndexedDB queue as JSON.
+- "Download my data package" in Account settings exports everything the user may export, in JSON.
+
+=== 16. TESTS ===
+Knowledge base: seed idempotency; every rule fires at its boundary values and not just outside them (HR 59/60/100/101, BP 129/79, 130/79, 140/90, 181/70, diastolic 120/121, sleep 6.9/7.0, verified CO2 average 3.0 vs 3.01); the five-night sleep scenario gives MONITOR on night 3 and REVIEW on night 5; the four-sample CO2 scenario returns INSUFFICIENT DATA and mean 3.075; light time for 384,400 km is about 1.282 s; career-total computation keeps mGy and mSv separate; NASA_REFERENCE rules cannot be edited; hazard rules never notify Doctors except the R-RAD-05 INFORMATION notice; Doctor rule edits are audit-logged; achievements never change with health values.
+Settings/auth: logout invalidates the cookie; logout-all invalidates other sessions; offline-queue dialog appears with a non-empty queue; 401 SESSION_EXPIRED handling; preferences persist server-side.
+Theme/i18n: contrast test passes in both themes; i18n:check passes; alerts render in each viewer's own language.
+Export: role scoping (Crew cannot export other people; Doctor export never contains hazards; Commander export never contains other people's mood/stress/isolation values); audit-log entries; null + status handling; CSV injection escaping; UTF-8 BOM; 24-hour expiry; rate limit; language-labelled headers; metadata block present.
+
+=== 17. ACCEPTANCE CHECKLIST ===
+1. A new Commander finishes the wizard and immediately sees mission name, mission day, distance, one-way delay and a populated calendar.
+2. Every Protocol, Rule, Source and Achievement screen has real content in English and Arabic.
+3. Entering a resting heart rate of 101 creates a MONITOR alert with its approved next step; entering SPE in progress creates a HIGH PRIORITY alert for the Commander.
+4. No screen shows a bare UNKNOWN or NOT_CONFIGURED where an actionable empty state or a seeded default exists; a fresh non-demo mission contains no health reading, hazard measurement or alert until someone enters it.
+5. Settings shows Appearance, Notifications, Units, Data & Privacy, Account; each change persists after refresh and on another device after login.
+6. Switching theme changes every screen instantly with no flash on reload; System follows the OS setting live.
+7. Switching to العربية flips the whole layout to RTL, translates every string (including toasts, errors, aria-labels and knowledge-base content), keeps clinical values, units, times and NASA identifiers readable as LTR islands, and uses Arabic fonts; switching back restores LTR.
+8. Safety sentences appear in both languages with identical meaning; status badges show translated labels with the canonical English code in the tooltip.
+9. Sign out works from the sidebar and Settings; unsynced offline entries are never lost silently; Sign out of all devices invalidates other sessions; the idle timeout works.
+10. Export works for each role with correct scoping, in JSON, CSV ZIP and printable report, in English and Arabic labels, with the metadata block and honest null/status handling; exports of other people's data appear in the audit log.
+11. All earlier acceptance checks from the first prompt still pass, and `npm test` passes with the new tests.

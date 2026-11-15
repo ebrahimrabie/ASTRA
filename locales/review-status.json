@@ -1,0 +1,3314 @@
+{
+  "app.brand": {
+    "reviewed": false
+  },
+  "app.fullName": {
+    "reviewed": false
+  },
+  "app.documentTitle": {
+    "reviewed": false
+  },
+  "app.subtitle": {
+    "reviewed": false
+  },
+  "app.loadingWorkspace": {
+    "reviewed": false
+  },
+  "app.utc": {
+    "reviewed": false
+  },
+  "app.link": {
+    "reviewed": false
+  },
+  "app.syncQueue": {
+    "reviewed": false
+  },
+  "app.signOut": {
+    "reviewed": false
+  },
+  "app.syncedItemsToast": {
+    "reviewed": false
+  },
+  "app.syncFailedToast": {
+    "reviewed": false
+  },
+  "app.youHaveBeenSignedOut": {
+    "reviewed": false
+  },
+  "app.currentPage": {
+    "reviewed": false
+  },
+  "app.navAria": {
+    "reviewed": false
+  },
+  "app.mainSectionsAria": {
+    "reviewed": false
+  },
+  "app.mobileNavAria": {
+    "reviewed": false
+  },
+  "lang.switcherAria": {
+    "reviewed": false
+  },
+  "lang.enLabel": {
+    "reviewed": false
+  },
+  "lang.arLabel": {
+    "reviewed": false
+  },
+  "lang.enName": {
+    "reviewed": false
+  },
+  "lang.arName": {
+    "reviewed": false
+  },
+  "nav.home": {
+    "reviewed": false
+  },
+  "nav.health": {
+    "reviewed": false
+  },
+  "nav.risks": {
+    "reviewed": false
+  },
+  "nav.calendar": {
+    "reviewed": false
+  },
+  "nav.alerts": {
+    "reviewed": false
+  },
+  "nav.alertsCount": {
+    "reviewed": false
+  },
+  "nav.protocol": {
+    "reviewed": false
+  },
+  "nav.rules": {
+    "reviewed": false
+  },
+  "nav.sources": {
+    "reviewed": false
+  },
+  "nav.telemetry": {
+    "reviewed": false
+  },
+  "nav.settings": {
+    "reviewed": false
+  },
+  "nav.profile": {
+    "reviewed": false
+  },
+  "nav.achievements": {
+    "reviewed": false
+  },
+  "nav.reports": {
+    "reviewed": false
+  },
+  "safety.disclaimer": {
+    "reviewed": false
+  },
+  "safety.readOnlyPrototype": {
+    "reviewed": false
+  },
+  "safety.noRule": {
+    "reviewed": false
+  },
+  "safety.noGuidance": {
+    "reviewed": false
+  },
+  "safety.noDeviceInstructions": {
+    "reviewed": false
+  },
+  "safety.readOnlyEnv": {
+    "reviewed": false
+  },
+  "safety.noAlertActive": {
+    "reviewed": false
+  },
+  "safety.protoProtocol": {
+    "reviewed": false
+  },
+  "safety.schematicNotToScale": {
+    "reviewed": false
+  },
+  "safety.privacyNote": {
+    "reviewed": false
+  },
+  "safety.std3001Warning": {
+    "reviewed": false
+  },
+  "status.SIMULATED": {
+    "reviewed": false
+  },
+  "status.SIMULATED DATA": {
+    "reviewed": false
+  },
+  "status.DEMO DATA": {
+    "reviewed": false
+  },
+  "status.ONLINE": {
+    "reviewed": false
+  },
+  "status.COMPLETED": {
+    "reviewed": false
+  },
+  "status.NORMAL": {
+    "reviewed": false
+  },
+  "status.BACKEND SYNCED": {
+    "reviewed": false
+  },
+  "status.VALID": {
+    "reviewed": false
+  },
+  "status.ACTIVE": {
+    "reviewed": false
+  },
+  "status.OFFLINE": {
+    "reviewed": false
+  },
+  "status.SYNC PENDING": {
+    "reviewed": false
+  },
+  "status.MONITOR": {
+    "reviewed": false
+  },
+  "status.REVIEW": {
+    "reviewed": false
+  },
+  "status.STALE": {
+    "reviewed": false
+  },
+  "status.LATE": {
+    "reviewed": false
+  },
+  "status.DEFERRED": {
+    "reviewed": false
+  },
+  "status.LOCAL ONLY": {
+    "reviewed": false
+  },
+  "status.ALERT": {
+    "reviewed": false
+  },
+  "status.HIGH PRIORITY": {
+    "reviewed": false
+  },
+  "status.HIGH_PRIORITY": {
+    "reviewed": false
+  },
+  "status.OVERDUE": {
+    "reviewed": false
+  },
+  "status.INVALID": {
+    "reviewed": false
+  },
+  "status.PENDING": {
+    "reviewed": false
+  },
+  "status.CONNECTING": {
+    "reviewed": false
+  },
+  "status.INFORMATION": {
+    "reviewed": false
+  },
+  "status.COMMANDER": {
+    "reviewed": false
+  },
+  "status.DOCTOR": {
+    "reviewed": false
+  },
+  "status.CREW": {
+    "reviewed": false
+  },
+  "status.UNKNOWN": {
+    "reviewed": false
+  },
+  "status.NOT_CONFIGURED": {
+    "reviewed": false
+  },
+  "status.INSUFFICIENT DATA": {
+    "reviewed": false
+  },
+  "status.PROTOTYPE_DEFAULT": {
+    "reviewed": false
+  },
+  "status.PROTOTYPE DEFAULT": {
+    "reviewed": false
+  },
+  "status.NASA_REFERENCE": {
+    "reviewed": false
+  },
+  "status.NASA REFERENCE": {
+    "reviewed": false
+  },
+  "status.CLINICAL_REFERENCE": {
+    "reviewed": false
+  },
+  "status.CLINICAL REFERENCE": {
+    "reviewed": false
+  },
+  "status.ACTIVE_REF": {
+    "reviewed": false
+  },
+  "status.ACTIVE_PROTO": {
+    "reviewed": false
+  },
+  "status.TEMPLATE_DEFAULT_DISTANCE": {
+    "reviewed": false
+  },
+  "status.ORIGINAL_TEXT": {
+    "reviewed": false
+  },
+  "status.DAILY": {
+    "reviewed": false
+  },
+  "status.WEEKLY": {
+    "reviewed": false
+  },
+  "status.STATUS_CODE_A11Y": {
+    "reviewed": false
+  },
+  "provenance.Self-reported": {
+    "reviewed": false
+  },
+  "provenance.Manual entry": {
+    "reviewed": false
+  },
+  "provenance.Offline-queued": {
+    "reviewed": false
+  },
+  "roles.COMMANDER": {
+    "reviewed": false
+  },
+  "roles.DOCTOR": {
+    "reviewed": false
+  },
+  "roles.CREW": {
+    "reviewed": false
+  },
+  "roles.commanderDesc": {
+    "reviewed": false
+  },
+  "roles.doctorDesc": {
+    "reviewed": false
+  },
+  "roles.crewDesc": {
+    "reviewed": false
+  },
+  "weekdays.0": {
+    "reviewed": false
+  },
+  "weekdays.1": {
+    "reviewed": false
+  },
+  "weekdays.2": {
+    "reviewed": false
+  },
+  "weekdays.3": {
+    "reviewed": false
+  },
+  "weekdays.4": {
+    "reviewed": false
+  },
+  "weekdays.5": {
+    "reviewed": false
+  },
+  "weekdays.6": {
+    "reviewed": false
+  },
+  "weekdays.short0": {
+    "reviewed": false
+  },
+  "weekdays.short1": {
+    "reviewed": false
+  },
+  "weekdays.short2": {
+    "reviewed": false
+  },
+  "weekdays.short3": {
+    "reviewed": false
+  },
+  "weekdays.short4": {
+    "reviewed": false
+  },
+  "weekdays.short5": {
+    "reviewed": false
+  },
+  "weekdays.short6": {
+    "reviewed": false
+  },
+  "errors.VALIDATION_ERROR": {
+    "reviewed": false
+  },
+  "errors.SESSION_EXPIRED": {
+    "reviewed": false
+  },
+  "errors.AUTH_REQUIRED": {
+    "reviewed": false
+  },
+  "errors.ROLE_FORBIDDEN": {
+    "reviewed": false
+  },
+  "errors.FORBIDDEN": {
+    "reviewed": false
+  },
+  "errors.MISSION_NOT_FOUND": {
+    "reviewed": false
+  },
+  "errors.MISSION_REQUIRED": {
+    "reviewed": false
+  },
+  "errors.EMAIL_EXISTS": {
+    "reviewed": false
+  },
+  "errors.INVALID_CREDENTIALS": {
+    "reviewed": false
+  },
+  "errors.PASSWORD_REQUIRED": {
+    "reviewed": false
+  },
+  "errors.MEASURED_AT_FUTURE": {
+    "reviewed": false
+  },
+  "errors.LATE_ENTRY_NOTE_REQUIRED": {
+    "reviewed": false
+  },
+  "errors.CONFIRMATION_REQUIRED": {
+    "reviewed": false
+  },
+  "errors.CONFLICT": {
+    "reviewed": false
+  },
+  "errors.NOT_FOUND": {
+    "reviewed": false
+  },
+  "errors.RATE_LIMITED": {
+    "reviewed": false
+  },
+  "errors.INVALID_JSON": {
+    "reviewed": false
+  },
+  "errors.INTERNAL_ERROR": {
+    "reviewed": false
+  },
+  "errors.API_UNREACHABLE": {
+    "reviewed": false
+  },
+  "errors.UNKNOWN_ERROR": {
+    "reviewed": false
+  },
+  "indicators.hr.name": {
+    "reviewed": false
+  },
+  "indicators.hr.unit": {
+    "reviewed": false
+  },
+  "indicators.bp.name": {
+    "reviewed": false
+  },
+  "indicators.bp.unit": {
+    "reviewed": false
+  },
+  "indicators.sleep.name": {
+    "reviewed": false
+  },
+  "indicators.sleep.unit": {
+    "reviewed": false
+  },
+  "indicators.mood.name": {
+    "reviewed": false
+  },
+  "indicators.mood.unit": {
+    "reviewed": false
+  },
+  "indicators.stress.name": {
+    "reviewed": false
+  },
+  "indicators.stress.unit": {
+    "reviewed": false
+  },
+  "indicators.act.name": {
+    "reviewed": false
+  },
+  "indicators.act.unit": {
+    "reviewed": false
+  },
+  "indicators.moodDemoCalm": {
+    "reviewed": false
+  },
+  "riskCategories.rad.name": {
+    "reviewed": false
+  },
+  "riskCategories.rad.desc": {
+    "reviewed": false
+  },
+  "riskCategories.rad.note": {
+    "reviewed": false
+  },
+  "riskCategories.grav.name": {
+    "reviewed": false
+  },
+  "riskCategories.grav.desc": {
+    "reviewed": false
+  },
+  "riskCategories.grav.note": {
+    "reviewed": false
+  },
+  "riskCategories.iso.name": {
+    "reviewed": false
+  },
+  "riskCategories.iso.desc": {
+    "reviewed": false
+  },
+  "riskCategories.iso.note": {
+    "reviewed": false
+  },
+  "riskCategories.env.name": {
+    "reviewed": false
+  },
+  "riskCategories.env.desc": {
+    "reviewed": false
+  },
+  "riskCategories.env.note": {
+    "reviewed": false
+  },
+  "riskCategories.dist.name": {
+    "reviewed": false
+  },
+  "riskCategories.dist.desc": {
+    "reviewed": false
+  },
+  "riskCategories.dist.note": {
+    "reviewed": false
+  },
+  "auth.email": {
+    "reviewed": false
+  },
+  "auth.password": {
+    "reviewed": false
+  },
+  "auth.emailPlaceholder": {
+    "reviewed": false
+  },
+  "auth.passwordPlaceholder": {
+    "reviewed": false
+  },
+  "auth.signInTitle": {
+    "reviewed": false
+  },
+  "auth.signingIn": {
+    "reviewed": false
+  },
+  "auth.missingLoginFields": {
+    "reviewed": false
+  },
+  "auth.signedInToast": {
+    "reviewed": false
+  },
+  "auth.roleScopedNote": {
+    "reviewed": false
+  },
+  "auth.createAccountBtn": {
+    "reviewed": false
+  },
+  "auth.enterDemoBtn": {
+    "reviewed": false
+  },
+  "auth.registerTitle": {
+    "reviewed": false
+  },
+  "auth.fullName": {
+    "reviewed": false
+  },
+  "auth.fullNamePlaceholder": {
+    "reviewed": false
+  },
+  "auth.regEmailPlaceholder": {
+    "reviewed": false
+  },
+  "auth.passwordMinLabel": {
+    "reviewed": false
+  },
+  "auth.passwordMinPlaceholder": {
+    "reviewed": false
+  },
+  "auth.missionRole": {
+    "reviewed": false
+  },
+  "auth.inviteOptionalLabel": {
+    "reviewed": false
+  },
+  "auth.invitePlaceholder": {
+    "reviewed": false
+  },
+  "auth.commanderHint": {
+    "reviewed": false
+  },
+  "auth.joinHint": {
+    "reviewed": false
+  },
+  "auth.registerInvalid": {
+    "reviewed": false
+  },
+  "auth.registering": {
+    "reviewed": false
+  },
+  "auth.registerBtn": {
+    "reviewed": false
+  },
+  "auth.accountCreatedToast": {
+    "reviewed": false
+  },
+  "auth.alreadyHaveAccount": {
+    "reviewed": false
+  },
+  "home.missionOverview": {
+    "reviewed": false
+  },
+  "home.joinMissionTitle": {
+    "reviewed": false
+  },
+  "home.joinMissionDesc": {
+    "reviewed": false
+  },
+  "home.inviteCodeLabel": {
+    "reviewed": false
+  },
+  "home.inviteRequiredError": {
+    "reviewed": false
+  },
+  "home.joinedToast": {
+    "reviewed": false
+  },
+  "home.missionDayLabel": {
+    "reviewed": false
+  },
+  "home.missionDayValue": {
+    "reviewed": false
+  },
+  "home.distanceLabel": {
+    "reviewed": false
+  },
+  "home.oneWayDelayLabel": {
+    "reviewed": false
+  },
+  "home.roundTripInline": {
+    "reviewed": false
+  },
+  "home.connectionLabel": {
+    "reviewed": false
+  },
+  "home.lastSyncLabel": {
+    "reviewed": false
+  },
+  "home.notSyncedYet": {
+    "reviewed": false
+  },
+  "home.crewInviteCode": {
+    "reviewed": false
+  },
+  "home.howCalculated": {
+    "reviewed": false
+  },
+  "home.openCalendar": {
+    "reviewed": false
+  },
+  "home.flightTelemetry": {
+    "reviewed": false
+  },
+  "home.guidedAssistant": {
+    "reviewed": false
+  },
+  "home.guidedHealthAssistant": {
+    "reviewed": false
+  },
+  "home.formulasPrefix": {
+    "reviewed": false
+  },
+  "home.formulasText": {
+    "reviewed": false
+  },
+  "home.missionNameLabel": {
+    "reviewed": false
+  },
+  "home.simulatedWord": {
+    "reviewed": false
+  },
+  "home.healthOverviewHeading": {
+    "reviewed": false
+  },
+  "home.viewAllHealth": {
+    "reviewed": false
+  },
+  "home.noReadingYet": {
+    "reviewed": false
+  },
+  "home.enterItNow": {
+    "reviewed": false
+  },
+  "home.logNew": {
+    "reviewed": false
+  },
+  "home.details": {
+    "reviewed": false
+  },
+  "home.timestampSourceMissing": {
+    "reviewed": false
+  },
+  "home.missionRisksCommander": {
+    "reviewed": false
+  },
+  "home.viewAllRisks": {
+    "reviewed": false
+  },
+  "home.openCommanderLog": {
+    "reviewed": false
+  },
+  "home.activeAlertsHeading": {
+    "reviewed": false
+  },
+  "home.openAlerts": {
+    "reviewed": false
+  },
+  "home.noActiveAlertsDemo": {
+    "reviewed": false
+  },
+  "home.missionProgressLabel": {
+    "reviewed": false
+  },
+  "wizard.title": {
+    "reviewed": false
+  },
+  "wizard.stepCounter": {
+    "reviewed": false
+  },
+  "wizard.stepsAria": {
+    "reviewed": false
+  },
+  "wizard.step1": {
+    "reviewed": false
+  },
+  "wizard.step2": {
+    "reviewed": false
+  },
+  "wizard.step3": {
+    "reviewed": false
+  },
+  "wizard.step4": {
+    "reviewed": false
+  },
+  "wizard.missionNameLabel": {
+    "reviewed": false
+  },
+  "wizard.missionNamePlaceholder": {
+    "reviewed": false
+  },
+  "wizard.missionNameHint": {
+    "reviewed": false
+  },
+  "wizard.startDateLabel": {
+    "reviewed": false
+  },
+  "wizard.plannedDaysLabel": {
+    "reviewed": false
+  },
+  "wizard.hazardDayLabel": {
+    "reviewed": false
+  },
+  "wizard.weekdayUtc": {
+    "reviewed": false
+  },
+  "wizard.templatesLead": {
+    "reviewed": false
+  },
+  "wizard.defaultDistGcr": {
+    "reviewed": false
+  },
+  "wizard.reviewDays": {
+    "reviewed": false
+  },
+  "wizard.templateLabel": {
+    "reviewed": false
+  },
+  "wizard.weeklyHazardsDayLabel": {
+    "reviewed": false
+  },
+  "wizard.launchSummary": {
+    "reviewed": false
+  },
+  "wizard.back": {
+    "reviewed": false
+  },
+  "wizard.continue": {
+    "reviewed": false
+  },
+  "wizard.launching": {
+    "reviewed": false
+  },
+  "wizard.launchMission": {
+    "reviewed": false
+  },
+  "wizard.errName": {
+    "reviewed": false
+  },
+  "wizard.errStartDate": {
+    "reviewed": false
+  },
+  "wizard.errPlannedDays": {
+    "reviewed": false
+  },
+  "wizard.configuredToast": {
+    "reviewed": false
+  },
+  "health.title": {
+    "reviewed": false
+  },
+  "health.subtitleAuth": {
+    "reviewed": false
+  },
+  "health.subtitleDemo": {
+    "reviewed": false
+  },
+  "health.viewCrewLabel": {
+    "reviewed": false
+  },
+  "health.allCrewOption": {
+    "reviewed": false
+  },
+  "health.enterReading": {
+    "reviewed": false
+  },
+  "health.sourceNotSupplied": {
+    "reviewed": false
+  },
+  "health.backToHealth": {
+    "reviewed": false
+  },
+  "health.indicatorNotFound": {
+    "reviewed": false
+  },
+  "health.indicatorNotFoundDesc": {
+    "reviewed": false
+  },
+  "health.latestReading": {
+    "reviewed": false
+  },
+  "health.timestampUtc": {
+    "reviewed": false
+  },
+  "health.sourceDevice": {
+    "reviewed": false
+  },
+  "health.dataQuality": {
+    "reviewed": false
+  },
+  "health.provenanceLabel": {
+    "reviewed": false
+  },
+  "health.historyCount": {
+    "reviewed": false
+  },
+  "health.history": {
+    "reviewed": false
+  },
+  "health.noEntriesYet": {
+    "reviewed": false
+  },
+  "health.sleepDemoCaption": {
+    "reviewed": false
+  },
+  "health.insufficientHistory": {
+    "reviewed": false
+  },
+  "health.activeRulesNoDiag": {
+    "reviewed": false
+  },
+  "health.rulesLead": {
+    "reviewed": false
+  },
+  "health.nextStepPrefix": {
+    "reviewed": false
+  },
+  "health.assessmentExplanation": {
+    "reviewed": false
+  },
+  "health.timestamp": {
+    "reviewed": false
+  },
+  "health.source": {
+    "reviewed": false
+  },
+  "health.baseline": {
+    "reviewed": false
+  },
+  "health.ruleStatus": {
+    "reviewed": false
+  },
+  "health.entryIndex": {
+    "reviewed": false
+  },
+  "health.dayIndex": {
+    "reviewed": false
+  },
+  "health.simDetailsHeading": {
+    "reviewed": false
+  },
+  "risks.commanderOnlyTitle": {
+    "reviewed": false
+  },
+  "risks.commanderOnlyDesc": {
+    "reviewed": false
+  },
+  "risks.title": {
+    "reviewed": false
+  },
+  "risks.subtitleAuth": {
+    "reviewed": false
+  },
+  "risks.subtitleDemo": {
+    "reviewed": false
+  },
+  "risks.lastEntry": {
+    "reviewed": false
+  },
+  "risks.noWeeklyEntry": {
+    "reviewed": false
+  },
+  "risks.openAndEnter": {
+    "reviewed": false
+  },
+  "risks.details": {
+    "reviewed": false
+  },
+  "risks.backToRisks": {
+    "reviewed": false
+  },
+  "risks.commanderAccessRequired": {
+    "reviewed": false
+  },
+  "risks.notFound": {
+    "reviewed": false
+  },
+  "risks.radEduHeading": {
+    "reviewed": false
+  },
+  "risks.radEduBody": {
+    "reviewed": false
+  },
+  "risks.careerEffTotal": {
+    "reviewed": false
+  },
+  "risks.remainingMsv": {
+    "reviewed": false
+  },
+  "risks.trailing30dEff": {
+    "reviewed": false
+  },
+  "risks.absorbedSeparate": {
+    "reviewed": false
+  },
+  "risks.mGyMissionTotal": {
+    "reviewed": false
+  },
+  "risks.weeklyRadEntry": {
+    "reviewed": false
+  },
+  "risks.detector": {
+    "reviewed": false
+  },
+  "risks.customDetector": {
+    "reviewed": false
+  },
+  "risks.detectorLocation": {
+    "reviewed": false
+  },
+  "risks.detectorIdOpt": {
+    "reviewed": false
+  },
+  "risks.absRateLabel": {
+    "reviewed": false
+  },
+  "risks.effRateLabel": {
+    "reviewed": false
+  },
+  "risks.accAbsLabel": {
+    "reviewed": false
+  },
+  "risks.accEffLabel": {
+    "reviewed": false
+  },
+  "risks.priorCareerLabel": {
+    "reviewed": false
+  },
+  "risks.solarStatusLabel": {
+    "reviewed": false
+  },
+  "risks.speNone": {
+    "reviewed": false
+  },
+  "risks.speInProgress": {
+    "reviewed": false
+  },
+  "risks.speEnded": {
+    "reviewed": false
+  },
+  "risks.solarNotesLabel": {
+    "reviewed": false
+  },
+  "risks.measuredAtUtc": {
+    "reviewed": false
+  },
+  "risks.now": {
+    "reviewed": false
+  },
+  "risks.saving": {
+    "reviewed": false
+  },
+  "risks.saveRadEntry": {
+    "reviewed": false
+  },
+  "risks.weeklyAtmoHeading": {
+    "reviewed": false
+  },
+  "risks.atmoSource": {
+    "reviewed": false
+  },
+  "risks.customAtmoSource": {
+    "reviewed": false
+  },
+  "risks.co2SamplesHeading": {
+    "reviewed": false
+  },
+  "risks.sampleOffset": {
+    "reviewed": false
+  },
+  "risks.ppo2Label": {
+    "reviewed": false
+  },
+  "risks.pressureLabel": {
+    "reviewed": false
+  },
+  "risks.diluentLabel": {
+    "reviewed": false
+  },
+  "risks.tempLabel": {
+    "reviewed": false
+  },
+  "risks.rhLabel": {
+    "reviewed": false
+  },
+  "risks.ventLabel": {
+    "reviewed": false
+  },
+  "risks.ventNominal": {
+    "reviewed": false
+  },
+  "risks.ventDegraded": {
+    "reviewed": false
+  },
+  "risks.ventOff": {
+    "reviewed": false
+  },
+  "risks.sevenDayCo2Label": {
+    "reviewed": false
+  },
+  "risks.saveEnvLog": {
+    "reviewed": false
+  },
+  "risks.latestCo2Heading": {
+    "reviewed": false
+  },
+  "risks.co2AnalysisSummary": {
+    "reviewed": false
+  },
+  "risks.weeklyGravHeading": {
+    "reviewed": false
+  },
+  "risks.gravRefDesc": {
+    "reviewed": false
+  },
+  "risks.gravEnvLabel": {
+    "reviewed": false
+  },
+  "risks.gravEnvDefault": {
+    "reviewed": false
+  },
+  "risks.weeklyExDaysLabel": {
+    "reviewed": false
+  },
+  "risks.saveGravEntry": {
+    "reviewed": false
+  },
+  "risks.crewExTotalsHeading": {
+    "reviewed": false
+  },
+  "risks.crewExItem": {
+    "reviewed": false
+  },
+  "risks.isoPrivacyBanner": {
+    "reviewed": false
+  },
+  "risks.aggCheckinHeading": {
+    "reviewed": false
+  },
+  "risks.aggCheckinText": {
+    "reviewed": false
+  },
+  "risks.weeklyIsoHeading": {
+    "reviewed": false
+  },
+  "risks.groundSessionsLabel": {
+    "reviewed": false
+  },
+  "risks.daysSinceContactLabel": {
+    "reviewed": false
+  },
+  "risks.saveIsoEntry": {
+    "reviewed": false
+  },
+  "risks.weeklyDistHeading": {
+    "reviewed": false
+  },
+  "risks.distKmLabel": {
+    "reviewed": false
+  },
+  "risks.commStatusLabel": {
+    "reviewed": false
+  },
+  "risks.commNominal": {
+    "reviewed": false
+  },
+  "risks.commDegraded": {
+    "reviewed": false
+  },
+  "risks.commLoss": {
+    "reviewed": false
+  },
+  "risks.sourceLabel": {
+    "reviewed": false
+  },
+  "risks.customDistSource": {
+    "reviewed": false
+  },
+  "risks.updateDistBtn": {
+    "reviewed": false
+  },
+  "risks.radUnavailable": {
+    "reviewed": false
+  },
+  "risks.absorbedDoseGy": {
+    "reviewed": false
+  },
+  "risks.effectiveDoseSv": {
+    "reviewed": false
+  },
+  "risks.radSeparateNote": {
+    "reviewed": false
+  },
+  "risks.isoPrivateBanner": {
+    "reviewed": false
+  },
+  "risks.sleepTrend": {
+    "reviewed": false
+  },
+  "risks.co2SimChartTitle": {
+    "reviewed": false
+  },
+  "risks.instantaneousReading": {
+    "reviewed": false
+  },
+  "risks.oneSampleSuffix": {
+    "reviewed": false
+  },
+  "risks.illustrativeMean": {
+    "reviewed": false
+  },
+  "risks.meanOfSamplesNote": {
+    "reviewed": false
+  },
+  "risks.verified1hAvg": {
+    "reviewed": false
+  },
+  "risks.windowCoverage": {
+    "reviewed": false
+  },
+  "risks.demoSignInCommander": {
+    "reviewed": false
+  },
+  "risks.recordedEntriesHeading": {
+    "reviewed": false
+  },
+  "risks.hazardSavedAlertsToast": {
+    "reviewed": false
+  },
+  "risks.hazardSavedToast": {
+    "reviewed": false
+  },
+  "risks.invalidUtcErr": {
+    "reviewed": false
+  },
+  "risks.co2SummaryMetricsAria": {
+    "reviewed": false
+  },
+  "risks.otherInstrumentFallback": {
+    "reviewed": false
+  },
+  "risks.recordedEntryLine": {
+    "reviewed": false
+  },
+  "risks.co2VerifiedAvgUnit": {
+    "reviewed": false
+  },
+  "calendar.emptyTitle": {
+    "reviewed": false
+  },
+  "calendar.emptyDesc": {
+    "reviewed": false
+  },
+  "calendar.title": {
+    "reviewed": false
+  },
+  "calendar.subtitle": {
+    "reviewed": false
+  },
+  "calendar.gridAria": {
+    "reviewed": false
+  },
+  "calendar.completedCount": {
+    "reviewed": false
+  },
+  "calendar.scheduleForDay": {
+    "reviewed": false
+  },
+  "calendar.noTasksForDay": {
+    "reviewed": false
+  },
+  "calendar.dueUtc": {
+    "reviewed": false
+  },
+  "calendar.deferralReason": {
+    "reviewed": false
+  },
+  "calendar.startEntry": {
+    "reviewed": false
+  },
+  "calendar.complete": {
+    "reviewed": false
+  },
+  "calendar.defer": {
+    "reviewed": false
+  },
+  "alerts.title": {
+    "reviewed": false
+  },
+  "alerts.subtitle": {
+    "reviewed": false
+  },
+  "alerts.reportHeading": {
+    "reviewed": false
+  },
+  "alerts.reportHelp": {
+    "reviewed": false
+  },
+  "alerts.reportDescLabel": {
+    "reviewed": false
+  },
+  "alerts.reportPlaceholder": {
+    "reviewed": false
+  },
+  "alerts.urgentCheckbox": {
+    "reviewed": false
+  },
+  "alerts.submitReport": {
+    "reviewed": false
+  },
+  "alerts.sending": {
+    "reviewed": false
+  },
+  "alerts.reportMinLenErr": {
+    "reviewed": false
+  },
+  "alerts.reportSentToast": {
+    "reviewed": false
+  },
+  "alerts.ackToast": {
+    "reviewed": false
+  },
+  "alerts.feedHeading": {
+    "reviewed": false
+  },
+  "alerts.relatedMeasurement": {
+    "reviewed": false
+  },
+  "alerts.crewMember": {
+    "reviewed": false
+  },
+  "alerts.timestamp": {
+    "reviewed": false
+  },
+  "alerts.source": {
+    "reviewed": false
+  },
+  "alerts.triggeredRule": {
+    "reviewed": false
+  },
+  "alerts.explanation": {
+    "reviewed": false
+  },
+  "alerts.approvedNextStep": {
+    "reviewed": false
+  },
+  "alerts.ackButton": {
+    "reviewed": false
+  },
+  "alerts.newAlertToast": {
+    "reviewed": false
+  },
+  "alerts.highPriorityToast": {
+    "reviewed": false
+  },
+  "alerts.sseHighTitle": {
+    "reviewed": false
+  },
+  "alerts.sseNormalTitle": {
+    "reviewed": false
+  },
+  "alerts.ackFailedToast": {
+    "reviewed": false
+  },
+  "rules.title": {
+    "reviewed": false
+  },
+  "rules.subtitle": {
+    "reviewed": false
+  },
+  "rules.editNoteBanner": {
+    "reviewed": false
+  },
+  "rules.threshold": {
+    "reviewed": false
+  },
+  "rules.explanation": {
+    "reviewed": false
+  },
+  "rules.approvedNextStep": {
+    "reviewed": false
+  },
+  "rules.source": {
+    "reviewed": false
+  },
+  "rules.editBtn": {
+    "reviewed": false
+  },
+  "rules.editThresholdLabel": {
+    "reviewed": false
+  },
+  "rules.editGuidanceLabel": {
+    "reviewed": false
+  },
+  "rules.saveEditBtn": {
+    "reviewed": false
+  },
+  "rules.cancel": {
+    "reviewed": false
+  },
+  "rules.updatedToast": {
+    "reviewed": false
+  },
+  "rules.auditHeading": {
+    "reviewed": false
+  },
+  "rules.noRuleMods": {
+    "reviewed": false
+  },
+  "rules.auditLine": {
+    "reviewed": false
+  },
+  "sources.title": {
+    "reviewed": false
+  },
+  "sources.subtitle": {
+    "reviewed": false
+  },
+  "sources.provenanceAria": {
+    "reviewed": false
+  },
+  "sources.selfReportedDesc": {
+    "reviewed": false
+  },
+  "sources.manualEntryDesc": {
+    "reviewed": false
+  },
+  "sources.offlineQueuedDesc": {
+    "reviewed": false
+  },
+  "sources.docsHeading": {
+    "reviewed": false
+  },
+  "sources.openSource": {
+    "reviewed": false
+  },
+  "sources.summaryHeading": {
+    "reviewed": false
+  },
+  "sources.colRuleId": {
+    "reviewed": false
+  },
+  "sources.colParameter": {
+    "reviewed": false
+  },
+  "sources.colValue": {
+    "reviewed": false
+  },
+  "sources.colLabel": {
+    "reviewed": false
+  },
+  "sources.colStatus": {
+    "reviewed": false
+  },
+  "sources.colSource": {
+    "reviewed": false
+  },
+  "protocol.title": {
+    "reviewed": false
+  },
+  "protocol.subtitle": {
+    "reviewed": false
+  },
+  "protocol.seededHeading": {
+    "reviewed": false
+  },
+  "protocol.estMinutes": {
+    "reviewed": false
+  },
+  "protocol.startEntry": {
+    "reviewed": false
+  },
+  "protocol.createCustomHeading": {
+    "reviewed": false
+  },
+  "protocol.taskNameLabel": {
+    "reviewed": false
+  },
+  "protocol.taskNamePlaceholder": {
+    "reviewed": false
+  },
+  "protocol.dueTimeLabel": {
+    "reviewed": false
+  },
+  "protocol.createTaskBtn": {
+    "reviewed": false
+  },
+  "protocol.missingTaskFields": {
+    "reviewed": false
+  },
+  "protocol.queueHeading": {
+    "reviewed": false
+  },
+  "protocol.emptyQueue": {
+    "reviewed": false
+  },
+  "protocol.dueSimple": {
+    "reviewed": false
+  },
+  "protocol.deferralReason": {
+    "reviewed": false
+  },
+  "protocol.complete": {
+    "reviewed": false
+  },
+  "protocol.defer": {
+    "reviewed": false
+  },
+  "protocol.completeAria": {
+    "reviewed": false
+  },
+  "protocol.deferAria": {
+    "reviewed": false
+  },
+  "protocol.historyHeading": {
+    "reviewed": false
+  },
+  "protocol.noActionsRecorded": {
+    "reviewed": false
+  },
+  "protocol.taskCreatedToast": {
+    "reviewed": false
+  },
+  "protocol.taskCompletedToast": {
+    "reviewed": false
+  },
+  "protocol.taskDeferredToast": {
+    "reviewed": false
+  },
+  "protocol.saveFailedToast": {
+    "reviewed": false
+  },
+  "entry.logFallbackTitle": {
+    "reviewed": false
+  },
+  "entry.close": {
+    "reviewed": false
+  },
+  "entry.hrBpm": {
+    "reviewed": false
+  },
+  "entry.hrContext": {
+    "reviewed": false
+  },
+  "entry.ctxResting": {
+    "reviewed": false
+  },
+  "entry.ctxAfterEx": {
+    "reviewed": false
+  },
+  "entry.ctxOther": {
+    "reviewed": false
+  },
+  "entry.bpSys": {
+    "reviewed": false
+  },
+  "entry.bpDia": {
+    "reviewed": false
+  },
+  "entry.sleepHours": {
+    "reviewed": false
+  },
+  "entry.sleepStartOpt": {
+    "reviewed": false
+  },
+  "entry.sleepEndOpt": {
+    "reviewed": false
+  },
+  "entry.moodLabel": {
+    "reviewed": false
+  },
+  "entry.mood1": {
+    "reviewed": false
+  },
+  "entry.mood2": {
+    "reviewed": false
+  },
+  "entry.mood3": {
+    "reviewed": false
+  },
+  "entry.mood4": {
+    "reviewed": false
+  },
+  "entry.mood5": {
+    "reviewed": false
+  },
+  "entry.stressLabel": {
+    "reviewed": false
+  },
+  "entry.actTypeLabel": {
+    "reviewed": false
+  },
+  "entry.actResistive": {
+    "reviewed": false
+  },
+  "entry.actAerobic": {
+    "reviewed": false
+  },
+  "entry.actOther": {
+    "reviewed": false
+  },
+  "entry.actDurationLabel": {
+    "reviewed": false
+  },
+  "entry.actCompleted": {
+    "reviewed": false
+  },
+  "entry.measuredAtUtc": {
+    "reviewed": false
+  },
+  "entry.now": {
+    "reviewed": false
+  },
+  "entry.lateNoteLabel": {
+    "reviewed": false
+  },
+  "entry.lateNotePlaceholder": {
+    "reviewed": false
+  },
+  "entry.deviceSourceLabel": {
+    "reviewed": false
+  },
+  "entry.customSourceLabel": {
+    "reviewed": false
+  },
+  "entry.customSourcePlaceholder": {
+    "reviewed": false
+  },
+  "entry.deviceIdOpt": {
+    "reviewed": false
+  },
+  "entry.deviceIdPlaceholder": {
+    "reviewed": false
+  },
+  "entry.selfReportBadgeNote": {
+    "reviewed": false
+  },
+  "entry.saving": {
+    "reviewed": false
+  },
+  "entry.saveMeasurement": {
+    "reviewed": false
+  },
+  "entry.cancel": {
+    "reviewed": false
+  },
+  "entry.errInvalidUtc": {
+    "reviewed": false
+  },
+  "entry.errFutureTs": {
+    "reviewed": false
+  },
+  "entry.errLateNote": {
+    "reviewed": false
+  },
+  "entry.errNoSource": {
+    "reviewed": false
+  },
+  "entry.errHrRange": {
+    "reviewed": false
+  },
+  "entry.errBpRange": {
+    "reviewed": false
+  },
+  "entry.errSleepRange": {
+    "reviewed": false
+  },
+  "entry.errStressRange": {
+    "reviewed": false
+  },
+  "entry.errActRange": {
+    "reviewed": false
+  },
+  "entry.queuedOfflineToast": {
+    "reviewed": false
+  },
+  "entry.unreachableQueuedToast": {
+    "reviewed": false
+  },
+  "entry.savedAlertsToast": {
+    "reviewed": false
+  },
+  "entry.readingRecordedToast": {
+    "reviewed": false
+  },
+  "defer.title": {
+    "reviewed": false
+  },
+  "defer.taskLabel": {
+    "reviewed": false
+  },
+  "defer.reasonLabel": {
+    "reviewed": false
+  },
+  "defer.reasonPlaceholder": {
+    "reviewed": false
+  },
+  "defer.confirm": {
+    "reviewed": false
+  },
+  "defer.cancel": {
+    "reviewed": false
+  },
+  "assistant.title": {
+    "reviewed": false
+  },
+  "assistant.subtitle": {
+    "reviewed": false
+  },
+  "assistant.scopeHeading": {
+    "reviewed": false
+  },
+  "assistant.scopeDesc": {
+    "reviewed": false
+  },
+  "assistant.whyBtn": {
+    "reviewed": false
+  },
+  "assistant.noAlertHeading": {
+    "reviewed": false
+  },
+  "assistant.noAlertsAuth": {
+    "reviewed": false
+  },
+  "assistant.noAlertsDemo": {
+    "reviewed": false
+  },
+  "assistant.explanationAria": {
+    "reviewed": false
+  },
+  "assistant.triggeredRule": {
+    "reviewed": false
+  },
+  "assistant.relatedMeasurement": {
+    "reviewed": false
+  },
+  "assistant.timestampUtc": {
+    "reviewed": false
+  },
+  "assistant.source": {
+    "reviewed": false
+  },
+  "assistant.explanation": {
+    "reviewed": false
+  },
+  "assistant.approvedNextStep": {
+    "reviewed": false
+  },
+  "assistant.escalationContact": {
+    "reviewed": false
+  },
+  "assistant.escCommander": {
+    "reviewed": false
+  },
+  "assistant.escDoctor": {
+    "reviewed": false
+  },
+  "assistant.ackState": {
+    "reviewed": false
+  },
+  "telemetry.title": {
+    "reviewed": false
+  },
+  "telemetry.subtitleAuth": {
+    "reviewed": false
+  },
+  "telemetry.subtitleDemo": {
+    "reviewed": false
+  },
+  "telemetry.schematicHeading": {
+    "reviewed": false
+  },
+  "telemetry.earth": {
+    "reviewed": false
+  },
+  "telemetry.moonLabel": {
+    "reviewed": false
+  },
+  "telemetry.spacecraft": {
+    "reviewed": false
+  },
+  "telemetry.distanceKnown": {
+    "reviewed": false
+  },
+  "telemetry.distanceUnknown": {
+    "reviewed": false
+  },
+  "telemetry.schematicCaption": {
+    "reviewed": false
+  },
+  "telemetry.svgAriaKnown": {
+    "reviewed": false
+  },
+  "telemetry.svgAriaUnknown": {
+    "reviewed": false
+  },
+  "telemetry.paramsHeading": {
+    "reviewed": false
+  },
+  "telemetry.howCalculated": {
+    "reviewed": false
+  },
+  "telemetry.calcBanner": {
+    "reviewed": false
+  },
+  "telemetry.missionLabel": {
+    "reviewed": false
+  },
+  "telemetry.timelineLabel": {
+    "reviewed": false
+  },
+  "telemetry.timelineVal": {
+    "reviewed": false
+  },
+  "telemetry.distanceLabel": {
+    "reviewed": false
+  },
+  "telemetry.oneWayLabel": {
+    "reviewed": false
+  },
+  "telemetry.connectionLabel": {
+    "reviewed": false
+  },
+  "telemetry.lastSyncLabel": {
+    "reviewed": false
+  },
+  "settings.title": {
+    "reviewed": false
+  },
+  "settings.subtitle": {
+    "reviewed": false
+  },
+  "settings.profileLink": {
+    "reviewed": false
+  },
+  "settings.sectionsAria": {
+    "reviewed": false
+  },
+  "settings.secAppearance": {
+    "reviewed": false
+  },
+  "settings.secNotifications": {
+    "reviewed": false
+  },
+  "settings.secUnits": {
+    "reviewed": false
+  },
+  "settings.secData": {
+    "reviewed": false
+  },
+  "settings.secAccount": {
+    "reviewed": false
+  },
+  "settings.savedMsg": {
+    "reviewed": false
+  },
+  "settings.themeLabel": {
+    "reviewed": false
+  },
+  "settings.themeDark": {
+    "reviewed": false
+  },
+  "settings.themeLight": {
+    "reviewed": false
+  },
+  "settings.themeSystem": {
+    "reviewed": false
+  },
+  "settings.themeAria": {
+    "reviewed": false
+  },
+  "settings.languageLabel": {
+    "reviewed": false
+  },
+  "settings.languageAria": {
+    "reviewed": false
+  },
+  "settings.english": {
+    "reviewed": false
+  },
+  "settings.arabic": {
+    "reviewed": false
+  },
+  "settings.numeralsLabel": {
+    "reviewed": false
+  },
+  "settings.numeralsAria": {
+    "reviewed": false
+  },
+  "settings.numeralsWestern": {
+    "reviewed": false
+  },
+  "settings.numeralsArabicIndic": {
+    "reviewed": false
+  },
+  "settings.numeralsHint": {
+    "reviewed": false
+  },
+  "settings.inAppMonitor": {
+    "reviewed": false
+  },
+  "settings.inAppReview": {
+    "reviewed": false
+  },
+  "settings.inAppHighPriority": {
+    "reviewed": false
+  },
+  "settings.browserNotifs": {
+    "reviewed": false
+  },
+  "settings.browserNotifsDesc": {
+    "reviewed": false
+  },
+  "settings.browserNotifsAria": {
+    "reviewed": false
+  },
+  "settings.requestPerm": {
+    "reviewed": false
+  },
+  "settings.reminderUtc": {
+    "reviewed": false
+  },
+  "settings.quietHoursToggle": {
+    "reviewed": false
+  },
+  "settings.quietStart": {
+    "reviewed": false
+  },
+  "settings.quietEnd": {
+    "reviewed": false
+  },
+  "settings.saveNotifsBtn": {
+    "reviewed": false
+  },
+  "settings.browserUnsupported": {
+    "reviewed": false
+  },
+  "settings.browserPermMsg": {
+    "reviewed": false
+  },
+  "settings.browserPermErr": {
+    "reviewed": false
+  },
+  "settings.displayUnitsTitle": {
+    "reviewed": false
+  },
+  "settings.unitsBanner": {
+    "reviewed": false
+  },
+  "settings.tempLabel": {
+    "reviewed": false
+  },
+  "settings.tempUnitAria": {
+    "reviewed": false
+  },
+  "settings.tempC": {
+    "reviewed": false
+  },
+  "settings.tempF": {
+    "reviewed": false
+  },
+  "settings.pressureLabel": {
+    "reviewed": false
+  },
+  "settings.pressureUnitAria": {
+    "reviewed": false
+  },
+  "settings.distLabel": {
+    "reviewed": false
+  },
+  "settings.distanceUnitAria": {
+    "reviewed": false
+  },
+  "settings.distKm": {
+    "reviewed": false
+  },
+  "settings.distMi": {
+    "reviewed": false
+  },
+  "settings.exportTitle": {
+    "reviewed": false
+  },
+  "settings.exportDesc": {
+    "reviewed": false
+  },
+  "settings.exportJsonBtn": {
+    "reviewed": false
+  },
+  "settings.exportQueueBtn": {
+    "reviewed": false
+  },
+  "settings.offlineExportNote": {
+    "reviewed": false
+  },
+  "settings.offlineOnlyErr": {
+    "reviewed": false
+  },
+  "settings.exportFailedErr": {
+    "reviewed": false
+  },
+  "settings.jsonExportedMsg": {
+    "reviewed": false
+  },
+  "settings.perm_default": {
+    "reviewed": false
+  },
+  "settings.perm_granted": {
+    "reviewed": false
+  },
+  "settings.perm_denied": {
+    "reviewed": false
+  },
+  "settings.perm_unsupported": {
+    "reviewed": false
+  },
+  "settings.privacyTitle": {
+    "reviewed": false
+  },
+  "settings.privacyBody": {
+    "reviewed": false
+  },
+  "settings.deleteTitle": {
+    "reviewed": false
+  },
+  "settings.deleteDesc": {
+    "reviewed": false
+  },
+  "settings.exportFirst": {
+    "reviewed": false
+  },
+  "settings.typeDeletePrompt": {
+    "reviewed": false
+  },
+  "settings.deletePlaceholder": {
+    "reviewed": false
+  },
+  "settings.deleting": {
+    "reviewed": false
+  },
+  "settings.deleteBtn": {
+    "reviewed": false
+  },
+  "settings.deleteAuthErr": {
+    "reviewed": false
+  },
+  "settings.deleteConfirmErr": {
+    "reviewed": false
+  },
+  "settings.deleteSuccessMsg": {
+    "reviewed": false
+  },
+  "settings.deleteToast": {
+    "reviewed": false
+  },
+  "settings.sessionTitle": {
+    "reviewed": false
+  },
+  "settings.nameLabel": {
+    "reviewed": false
+  },
+  "settings.emailLabel": {
+    "reviewed": false
+  },
+  "settings.roleLabel": {
+    "reviewed": false
+  },
+  "settings.missionLabel": {
+    "reviewed": false
+  },
+  "settings.demoSessionNote": {
+    "reviewed": false
+  },
+  "settings.signOutBtn": {
+    "reviewed": false
+  },
+  "settings.changePwTitle": {
+    "reviewed": false
+  },
+  "settings.curPw": {
+    "reviewed": false
+  },
+  "settings.newPw": {
+    "reviewed": false
+  },
+  "settings.confirmPw": {
+    "reviewed": false
+  },
+  "settings.updatingPw": {
+    "reviewed": false
+  },
+  "settings.changePwBtn": {
+    "reviewed": false
+  },
+  "settings.pwUpdatedMsg": {
+    "reviewed": false
+  },
+  "settings.pwLenErr": {
+    "reviewed": false
+  },
+  "settings.pwMismatchErr": {
+    "reviewed": false
+  },
+  "settings.logoutAllTitle": {
+    "reviewed": false
+  },
+  "settings.logoutAllDesc": {
+    "reviewed": false
+  },
+  "settings.reenterPw": {
+    "reviewed": false
+  },
+  "settings.revoking": {
+    "reviewed": false
+  },
+  "settings.logoutAllBtn": {
+    "reviewed": false
+  },
+  "settings.logoutAllPwErr": {
+    "reviewed": false
+  },
+  "profile.title": {
+    "reviewed": false
+  },
+  "profile.subtitleDemo": {
+    "reviewed": false
+  },
+  "profile.openSettings": {
+    "reviewed": false
+  },
+  "profile.accountProfile": {
+    "reviewed": false
+  },
+  "profile.demoProfile": {
+    "reviewed": false
+  },
+  "profile.nameLabel": {
+    "reviewed": false
+  },
+  "profile.emailLabel": {
+    "reviewed": false
+  },
+  "profile.missionLabel": {
+    "reviewed": false
+  },
+  "profile.demoSessionDesc": {
+    "reviewed": false
+  },
+  "profile.connSimTitle": {
+    "reviewed": false
+  },
+  "profile.reconnect": {
+    "reviewed": false
+  },
+  "profile.simulateOffline": {
+    "reviewed": false
+  },
+  "profile.offlineNote": {
+    "reviewed": false
+  },
+  "profile.privacyTitle": {
+    "reviewed": false
+  },
+  "profile.configTitle": {
+    "reviewed": false
+  },
+  "profile.configDesc": {
+    "reviewed": false
+  },
+  "profile.goToSettings": {
+    "reviewed": false
+  },
+  "signout.title": {
+    "reviewed": false
+  },
+  "signout.queueWarning": {
+    "reviewed": false
+  },
+  "signout.entrySingle": {
+    "reviewed": false
+  },
+  "signout.entryPlural": {
+    "reviewed": false
+  },
+  "signout.syncing": {
+    "reviewed": false
+  },
+  "signout.syncAndSignOut": {
+    "reviewed": false
+  },
+  "signout.exportAndSignOut": {
+    "reviewed": false
+  },
+  "signout.discardAndSignOut": {
+    "reviewed": false
+  },
+  "signout.cancel": {
+    "reviewed": false
+  },
+  "signout.body": {
+    "reviewed": false
+  },
+  "signout.signingOut": {
+    "reviewed": false
+  },
+  "signout.confirm": {
+    "reviewed": false
+  },
+  "idle.title": {
+    "reviewed": false
+  },
+  "idle.countdownText": {
+    "reviewed": false
+  },
+  "idle.queueBanner": {
+    "reviewed": false
+  },
+  "idle.entryPhraseSingle": {
+    "reviewed": false
+  },
+  "idle.entryPhrasePlural": {
+    "reviewed": false
+  },
+  "idle.staySignedIn": {
+    "reviewed": false
+  },
+  "idle.syncThenSignOut": {
+    "reviewed": false
+  },
+  "idle.exportAndSignOut": {
+    "reviewed": false
+  },
+  "idle.signOutNow": {
+    "reviewed": false
+  },
+  "charts.sleepAria": {
+    "reviewed": false
+  },
+  "charts.sleepRefNasa": {
+    "reviewed": false
+  },
+  "charts.sleepRefClinical": {
+    "reviewed": false
+  },
+  "charts.co2Aria": {
+    "reviewed": false
+  },
+  "charts.co2RefLine": {
+    "reviewed": false
+  },
+  "charts.hoursWord": {
+    "reviewed": false
+  },
+  "kb.templates.leo_iss.title": {
+    "reviewed": false
+  },
+  "kb.templates.leo_iss.desc": {
+    "reviewed": false
+  },
+  "kb.templates.lunar.title": {
+    "reviewed": false
+  },
+  "kb.templates.lunar.desc": {
+    "reviewed": false
+  },
+  "kb.templates.mars.title": {
+    "reviewed": false
+  },
+  "kb.templates.mars.desc": {
+    "reviewed": false
+  },
+  "kb.sources.std3001_v1.title": {
+    "reviewed": false
+  },
+  "kb.sources.std3001_v1.note": {
+    "reviewed": false
+  },
+  "kb.sources.std3001_v2.title": {
+    "reviewed": false
+  },
+  "kb.sources.std3001_v2.note": {
+    "reviewed": false
+  },
+  "kb.sources.tb002.title": {
+    "reviewed": false
+  },
+  "kb.sources.tb002.note": {
+    "reviewed": false
+  },
+  "kb.sources.tb004.title": {
+    "reviewed": false
+  },
+  "kb.sources.tb004.note": {
+    "reviewed": false
+  },
+  "kb.sources.tb020.title": {
+    "reviewed": false
+  },
+  "kb.sources.tb020.note": {
+    "reviewed": false
+  },
+  "kb.sources.srag.title": {
+    "reviewed": false
+  },
+  "kb.sources.srag.note": {
+    "reviewed": false
+  },
+  "kb.sources.ntrs_exercise.title": {
+    "reviewed": false
+  },
+  "kb.sources.ntrs_exercise.note": {
+    "reviewed": false
+  },
+  "kb.sources.pmc_radiation.title": {
+    "reviewed": false
+  },
+  "kb.sources.pmc_radiation.note": {
+    "reviewed": false
+  },
+  "kb.sources.acc_aha.title": {
+    "reviewed": false
+  },
+  "kb.sources.acc_aha.note": {
+    "reviewed": false
+  },
+  "kb.sources.aasm_srs.title": {
+    "reviewed": false
+  },
+  "kb.sources.aasm_srs.note": {
+    "reviewed": false
+  },
+  "kb.instruments.cad.name": {
+    "reviewed": false
+  },
+  "kb.instruments.cad.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.iss_rad.name": {
+    "reviewed": false
+  },
+  "kb.instruments.iss_rad.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.rem2.name": {
+    "reviewed": false
+  },
+  "kb.instruments.rem2.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.hera.name": {
+    "reviewed": false
+  },
+  "kb.instruments.hera.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.tepc.name": {
+    "reviewed": false
+  },
+  "kb.instruments.tepc.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.passive.name": {
+    "reviewed": false
+  },
+  "kb.instruments.passive.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.crew_medical.name": {
+    "reviewed": false
+  },
+  "kb.instruments.crew_medical.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.manual.name": {
+    "reviewed": false
+  },
+  "kb.instruments.manual.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.wearable.name": {
+    "reviewed": false
+  },
+  "kb.instruments.wearable.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.vehicle_atmo.name": {
+    "reviewed": false
+  },
+  "kb.instruments.vehicle_atmo.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.portable_gas.name": {
+    "reviewed": false
+  },
+  "kb.instruments.portable_gas.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.mission_uplink.name": {
+    "reviewed": false
+  },
+  "kb.instruments.mission_uplink.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.onboard_nav.name": {
+    "reviewed": false
+  },
+  "kb.instruments.onboard_nav.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.template_default.name": {
+    "reviewed": false
+  },
+  "kb.instruments.template_default.desc": {
+    "reviewed": false
+  },
+  "kb.instruments.other.name": {
+    "reviewed": false
+  },
+  "kb.instruments.other.desc": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-02.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-02.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-02.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-02.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-03.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-03.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-03.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-03.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-04.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-04.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-04.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-04.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-05.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-05.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-05.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-RAD-05.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-02.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-02.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-02.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-02.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-03.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-03.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-03.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-03.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-04.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-04.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-04.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-04.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-05.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-05.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-05.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-05.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-06.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-06.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-06.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-06.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-07.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-07.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-07.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-ENV-07.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-GRV-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-GRV-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-GRV-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-GRV-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-ISO-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-ISO-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-ISO-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-ISO-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-DST-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-DST-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-DST-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-DST-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-DST-02.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-DST-02.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-DST-02.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-DST-02.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-HR-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-HR-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-HR-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-HR-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-HR-02.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-HR-02.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-HR-02.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-HR-02.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-02.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-02.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-02.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-02.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-03.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-03.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-03.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-03.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-04.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-04.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-04.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-BP-04.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-02.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-02.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-02.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-02.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-03.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-03.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-03.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-SLP-03.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-MOOD-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-MOOD-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-MOOD-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-MOOD-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-STR-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-STR-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-STR-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-STR-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-STR-02.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-STR-02.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-STR-02.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-STR-02.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-ACT-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-ACT-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-ACT-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-ACT-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-DATA-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-DATA-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-DATA-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-DATA-01.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-DATA-02.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-DATA-02.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-DATA-02.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-DATA-02.source": {
+    "reviewed": false
+  },
+  "kb.rules.R-REP-01.title": {
+    "reviewed": false
+  },
+  "kb.rules.R-REP-01.explanation": {
+    "reviewed": false
+  },
+  "kb.rules.R-REP-01.next_step": {
+    "reviewed": false
+  },
+  "kb.rules.R-REP-01.source": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-HR.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-HR.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-HR.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-HR.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-HR.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-HR.step3": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-HR.step4": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-BP.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-BP.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-BP.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-BP.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-BP.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-BP.step3": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-BP.step4": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-SLP.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-SLP.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-SLP.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-SLP.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-SLP.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-MOOD.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-MOOD.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-MOOD.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-MOOD.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-MOOD.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-STR.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-STR.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-STR.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-STR.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-STR.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ACT.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ACT.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ACT.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ACT.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ACT.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-RAD.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-RAD.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-RAD.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-RAD.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-RAD.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-RAD.step3": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ENV.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ENV.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ENV.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ENV.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ENV.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-GRV.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-GRV.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-GRV.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-GRV.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-GRV.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ISO.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ISO.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ISO.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ISO.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-ISO.step2": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-DST.title": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-DST.purpose": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-DST.safety": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-DST.step1": {
+    "reviewed": false
+  },
+  "kb.protocols.PRT-DST.step2": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_radiation.title": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_radiation.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_radiation.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_sleep.title": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_sleep.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_sleep.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_exercise.title": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_exercise.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_exercise.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_readiness.title": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_readiness.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.edu_readiness.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.consistency_7.title": {
+    "reviewed": false
+  },
+  "kb.achievements.consistency_7.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.consistency_7.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.consistency_14.title": {
+    "reviewed": false
+  },
+  "kb.achievements.consistency_14.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.consistency_14.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.consistency_30.title": {
+    "reviewed": false
+  },
+  "kb.achievements.consistency_30.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.consistency_30.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_25.title": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_25.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_25.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_50.title": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_50.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_50.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_75.title": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_75.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_75.hint": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_100.title": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_100.desc": {
+    "reviewed": false
+  },
+  "kb.achievements.progress_100.hint": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.title": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.summary": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.source": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q1.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q1.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q1.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q1.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q1.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q2.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q2.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q2.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q2.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q2.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q3.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q3.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q3.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q3.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_radiation.q3.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.title": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.summary": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.source": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q1.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q1.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q1.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q1.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q1.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q2.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q2.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q2.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q2.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q2.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q3.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q3.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q3.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q3.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_sleep.q3.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.title": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.summary": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.source": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q1.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q1.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q1.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q1.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q1.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q2.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q2.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q2.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q2.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q2.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q3.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q3.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q3.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q3.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_exercise.q3.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.title": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.summary": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.source": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q1.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q1.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q1.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q1.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q1.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q2.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q2.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q2.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q2.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q2.exp": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q3.prompt": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q3.opt0": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q3.opt1": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q3.opt2": {
+    "reviewed": false
+  },
+  "kb.education.edu_readiness.q3.exp": {
+    "reviewed": false
+  },
+  "alerts_titles.R-HR-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-HR-02": {
+    "reviewed": false
+  },
+  "alerts_titles.R-BP-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-BP-02": {
+    "reviewed": false
+  },
+  "alerts_titles.R-BP-03": {
+    "reviewed": false
+  },
+  "alerts_titles.R-BP-04": {
+    "reviewed": false
+  },
+  "alerts_titles.R-SLP-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-SLP-02": {
+    "reviewed": false
+  },
+  "alerts_titles.R-SLP-03": {
+    "reviewed": false
+  },
+  "alerts_titles.R-MOOD-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-STR-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-STR-02": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ACT-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-RAD-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-RAD-02": {
+    "reviewed": false
+  },
+  "alerts_titles.R-RAD-03": {
+    "reviewed": false
+  },
+  "alerts_titles.R-RAD-04": {
+    "reviewed": false
+  },
+  "alerts_titles.R-RAD-05": {
+    "reviewed": false
+  },
+  "alerts_titles.R-RAD-05.doctor_info": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ENV-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ENV-02": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ENV-03": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ENV-04": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ENV-05": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ENV-06.info": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ENV-06.alert": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ENV-07": {
+    "reviewed": false
+  },
+  "alerts_titles.R-GRV-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-ISO-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-DST-01": {
+    "reviewed": false
+  },
+  "alerts_titles.R-DST-02": {
+    "reviewed": false
+  },
+  "alerts_titles.R-REP-01.standard": {
+    "reviewed": false
+  },
+  "alerts_titles.R-REP-01.urgent": {
+    "reviewed": false
+  }
+}

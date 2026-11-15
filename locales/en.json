@@ -1,0 +1,1384 @@
+{
+  "app": {
+    "brand": "ASTRA",
+    "fullName": "Adaptive Spaceflight Tracking & Risk Assessment",
+    "documentTitle": "ASTRA — Adaptive Spaceflight Tracking & Risk Assessment",
+    "subtitle": "Decision-Support Prototype",
+    "loadingWorkspace": "Loading ASTRA workspace...",
+    "utc": "UTC",
+    "link": "Link",
+    "syncQueue": "Sync queue ({count})",
+    "signOut": "Sign out",
+    "syncedItemsToast": "Synced {count} queued item(s)",
+    "syncFailedToast": "Sync failed while offline",
+    "youHaveBeenSignedOut": "You have been signed out.",
+    "currentPage": "(current page)",
+    "navAria": "Primary navigation",
+    "mainSectionsAria": "Main sections",
+    "mobileNavAria": "Mobile navigation"
+  },
+  "lang": {
+    "switcherAria": "Switch language",
+    "enLabel": "EN",
+    "arLabel": "ع",
+    "enName": "English",
+    "arName": "العربية"
+  },
+  "nav": {
+    "home": "Home",
+    "health": "Health",
+    "risks": "Risks",
+    "calendar": "Calendar",
+    "alerts": "Alerts",
+    "alertsCount": "Alerts ({count})",
+    "protocol": "Protocol",
+    "rules": "Rules",
+    "sources": "Sources",
+    "telemetry": "Flight Telemetry",
+    "settings": "Settings",
+    "profile": "Profile",
+    "achievements": "Achievements",
+    "reports": "Reports"
+  },
+  "safety": {
+    "disclaimer": "Decision-support prototype. Not a validated clinical system.",
+    "readOnlyPrototype": "Read-only decision-support prototype. Not a validated clinical system.",
+    "noRule": "No approved rule is configured for this indicator. ASTRA does not diagnose or interpret readings.",
+    "noGuidance": "No approved guidance is configured for this condition. Contact the designated support role.",
+    "noDeviceInstructions": "Approved device instructions are not configured. Contact the designated support role.",
+    "readOnlyEnv": "ASTRA is read-only. It cannot control spacecraft environmental systems.",
+    "noAlertActive": "No alert is active.",
+    "protoProtocol": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+    "schematicNotToScale": "Schematic, not to scale",
+    "privacyNote": "Psychological results stay private. No public comparisons or crew rankings.",
+    "std3001Warning": "NASA-STD-3001 is revised periodically (Vol 2 Rev F approved 2026-07-14). Verify limits against the current revision before operational use."
+  },
+  "status": {
+    "SIMULATED": "SIMULATED",
+    "SIMULATED DATA": "SIMULATED DATA",
+    "DEMO DATA": "DEMO DATA",
+    "ONLINE": "ONLINE",
+    "COMPLETED": "COMPLETED",
+    "NORMAL": "NORMAL",
+    "BACKEND SYNCED": "BACKEND SYNCED",
+    "VALID": "VALID",
+    "ACTIVE": "ACTIVE",
+    "OFFLINE": "OFFLINE",
+    "SYNC PENDING": "SYNC PENDING",
+    "MONITOR": "MONITOR",
+    "REVIEW": "REVIEW",
+    "STALE": "STALE",
+    "LATE": "LATE",
+    "DEFERRED": "DEFERRED",
+    "LOCAL ONLY": "LOCAL ONLY",
+    "ALERT": "ALERT",
+    "HIGH PRIORITY": "HIGH PRIORITY",
+    "HIGH_PRIORITY": "HIGH PRIORITY",
+    "OVERDUE": "OVERDUE",
+    "INVALID": "INVALID",
+    "PENDING": "PENDING",
+    "CONNECTING": "CONNECTING",
+    "INFORMATION": "INFORMATION",
+    "COMMANDER": "COMMANDER",
+    "DOCTOR": "DOCTOR",
+    "CREW": "CREW",
+    "UNKNOWN": "UNKNOWN",
+    "NOT_CONFIGURED": "NOT CONFIGURED",
+    "INSUFFICIENT DATA": "INSUFFICIENT DATA",
+    "PROTOTYPE_DEFAULT": "PROTOTYPE DEFAULT",
+    "PROTOTYPE DEFAULT": "PROTOTYPE DEFAULT",
+    "NASA_REFERENCE": "NASA REFERENCE",
+    "NASA REFERENCE": "NASA REFERENCE",
+    "CLINICAL_REFERENCE": "CLINICAL REFERENCE",
+    "CLINICAL REFERENCE": "CLINICAL REFERENCE",
+    "ACTIVE_REF": "Active (reference)",
+    "ACTIVE_PROTO": "Active (prototype default)",
+    "TEMPLATE_DEFAULT_DISTANCE": "Template default distance",
+    "ORIGINAL_TEXT": "Original text",
+    "DAILY": "DAILY",
+    "WEEKLY": "WEEKLY",
+    "STATUS_CODE_A11Y": "Status code: {code}"
+  },
+  "provenance": {
+    "Self-reported": "Self-reported",
+    "Manual entry": "Manual entry",
+    "Offline-queued": "Offline-queued"
+  },
+  "roles": {
+    "COMMANDER": "COMMANDER",
+    "DOCTOR": "DOCTOR",
+    "CREW": "CREW",
+    "commanderDesc": "COMMANDER — Mission setup & weekly hazards",
+    "doctorDesc": "DOCTOR — Crew health monitoring & prototype rules",
+    "crewDesc": "CREW — Daily readings & personal trends"
+  },
+  "weekdays": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday",
+    "short0": "Sun",
+    "short1": "Mon",
+    "short2": "Tue",
+    "short3": "Wed",
+    "short4": "Thu",
+    "short5": "Fri",
+    "short6": "Sat"
+  },
+  "errors": {
+    "VALIDATION_ERROR": "Please check the entered fields and try again.",
+    "SESSION_EXPIRED": "Your session has expired. Please sign in again.",
+    "AUTH_REQUIRED": "Authentication is required for this action.",
+    "ROLE_FORBIDDEN": "Your role is not permitted to perform this action.",
+    "FORBIDDEN": "Your role is not permitted to perform this action.",
+    "MISSION_NOT_FOUND": "No mission found with this invite code.",
+    "MISSION_REQUIRED": "Join or configure a mission before continuing.",
+    "EMAIL_EXISTS": "An account with this email already exists.",
+    "INVALID_CREDENTIALS": "Invalid email or password.",
+    "PASSWORD_REQUIRED": "Password re-entry is required.",
+    "MEASURED_AT_FUTURE": "Measurement timestamp cannot be in the future.",
+    "LATE_ENTRY_NOTE_REQUIRED": "Measurements older than 7 days require a late entry explanation note.",
+    "CONFIRMATION_REQUIRED": "Type DELETE in all capitals to confirm.",
+    "CONFLICT": "This action conflicts with the current item state.",
+    "NOT_FOUND": "Requested record was not found.",
+    "RATE_LIMITED": "Rate limit exceeded. Please wait a moment before trying again.",
+    "INVALID_JSON": "Invalid request payload.",
+    "INTERNAL_ERROR": "Internal server error.",
+    "API_UNREACHABLE": "Unable to reach the server.",
+    "UNKNOWN_ERROR": "Request failed. Please try again."
+  },
+  "indicators": {
+    "hr": { "name": "Heart Rate", "unit": "bpm" },
+    "bp": { "name": "Blood Pressure", "unit": "mmHg" },
+    "sleep": { "name": "Sleep", "unit": "hours" },
+    "mood": { "name": "Mood", "unit": "/ 5" },
+    "stress": { "name": "Stress", "unit": "/ 100" },
+    "act": { "name": "Physical Activity", "unit": "minutes" },
+    "moodDemoCalm": "Calm"
+  },
+  "riskCategories": {
+    "rad": {
+      "name": "Space Radiation",
+      "desc": "Galactic cosmic rays, solar particle events and trapped radiation.",
+      "note": "Radiation data unavailable"
+    },
+    "grav": {
+      "name": "Altered Gravity / Microgravity",
+      "desc": "Exposure to altered gravity during the mission.",
+      "note": "No gravity environment or exercise records supplied"
+    },
+    "iso": {
+      "name": "Isolation & Confinement",
+      "desc": "Mood, stress and sleep context for behavioral health.",
+      "note": "Private. No approved assessments configured"
+    },
+    "env": {
+      "name": "Hostile / Closed Environment",
+      "desc": "CO2, O2, cabin pressure, temperature, humidity.",
+      "note": "CO2: 4 simulated samples, one-hour coverage unverified"
+    },
+    "dist": {
+      "name": "Distance from Earth",
+      "desc": "Mission distance, light time and communication status.",
+      "note": "No mission distance configured"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "emailPlaceholder": "commander@mission.space",
+    "passwordPlaceholder": "Enter password",
+    "signInTitle": "Sign in",
+    "signingIn": "Signing in...",
+    "missingLoginFields": "Enter both email and password.",
+    "signedInToast": "Signed in as {name}",
+    "roleScopedNote": "Role-scoped mission authentication (Commander / Doctor / Crew)",
+    "createAccountBtn": "Create mission account",
+    "enterDemoBtn": "Enter Demo Mode",
+    "registerTitle": "Create Mission Account",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "e.g. Cmdr. Elena Vega",
+    "regEmailPlaceholder": "name@mission.space",
+    "passwordMinLabel": "Password (min 8 characters)",
+    "passwordMinPlaceholder": "At least 8 characters",
+    "missionRole": "Mission role",
+    "inviteOptionalLabel": "Mission invite code (optional; can join after login)",
+    "invitePlaceholder": "e.g. ASTRA-1A2B3C",
+    "commanderHint": "Starts Mission Setup Wizard on first login.",
+    "joinHint": "Uses Mission Invite Code from Commander.",
+    "registerInvalid": "Enter your name, valid email, and a password of at least 8 characters.",
+    "registering": "Creating account...",
+    "registerBtn": "Register",
+    "accountCreatedToast": "Account created",
+    "alreadyHaveAccount": "Already have an account? Sign in"
+  },
+  "home": {
+    "missionOverview": "Mission Overview",
+    "joinMissionTitle": "Join Mission",
+    "joinMissionDesc": "Enter the Mission Invite Code from your Commander to load your scheduled calendar, protocols, and health monitoring rules.",
+    "inviteCodeLabel": "Mission invite code",
+    "inviteRequiredError": "Enter the Mission Invite Code provided by your Commander.",
+    "joinedToast": "Joined mission {name}",
+    "missionDayLabel": "Mission day",
+    "missionDayValue": "Day {day} of {planned} ({percent}%)",
+    "distanceLabel": "Distance",
+    "oneWayDelayLabel": "One-way delay",
+    "roundTripInline": "(round trip: {rt})",
+    "connectionLabel": "Connection",
+    "lastSyncLabel": "Last synchronization",
+    "notSyncedYet": "Not synced yet",
+    "crewInviteCode": "Crew invite code",
+    "howCalculated": "How is this calculated?",
+    "openCalendar": "Open Calendar",
+    "flightTelemetry": "Flight Telemetry",
+    "guidedAssistant": "Guided Assistant",
+    "guidedHealthAssistant": "Guided Health Assistant",
+    "formulasPrefix": "Mission Derived Formulas:",
+    "formulasText": "Mission day = floor((today UTC − start date) / 1 day) + 1; Progress % = mission day / planned days; One-way light time = distance_km / 299,792.458 km/s; Round trip = 2 × one-way.",
+    "missionNameLabel": "Mission name",
+    "simulatedWord": "simulated",
+    "healthOverviewHeading": "Health overview",
+    "viewAllHealth": "View all health",
+    "noReadingYet": "No reading yet today. Enter it now.",
+    "enterItNow": "Enter it now",
+    "logNew": "Log new",
+    "details": "Details",
+    "timestampSourceMissing": "Timestamp and source: not provided",
+    "missionRisksCommander": "Mission risks (Commander)",
+    "viewAllRisks": "View all risks",
+    "openCommanderLog": "Open weekly Commander log and rule checks.",
+    "activeAlertsHeading": "Active alerts",
+    "openAlerts": "Open Alerts",
+    "noActiveAlertsDemo": "No active alerts. Alert rules are not configured, so ASTRA cannot report a normal state.",
+    "missionProgressLabel": "Mission timeline progress"
+  },
+  "wizard": {
+    "title": "Mission Setup Wizard",
+    "stepCounter": "Step {step} of 4 — Configure mission identity, timeline, and reference template.",
+    "stepsAria": "Wizard steps",
+    "step1": "1. Mission Name",
+    "step2": "2. Dates & Schedule",
+    "step3": "3. Mission Template",
+    "step4": "4. Review & Launch",
+    "missionNameLabel": "Mission name",
+    "missionNamePlaceholder": "Type your mission name (e.g. Artemis Orbital Test)",
+    "missionNameHint": "ASTRA never auto-invents mission names. Enter the designation you wish to use.",
+    "startDateLabel": "Mission start date (UTC)",
+    "plannedDaysLabel": "Planned duration (days)",
+    "hazardDayLabel": "Weekly Commander hazard schedule day",
+    "weekdayUtc": "{day} (UTC)",
+    "templatesLead": "Templates supply NASA physical constants and default radiation/distance references:",
+    "defaultDistGcr": "Default distance: {dist} {unit} | GCR ref: {gcr} mSv/day",
+    "reviewDays": "{days} days",
+    "templateLabel": "Template",
+    "weeklyHazardsDayLabel": "Weekly hazards day",
+    "launchSummary": "Launching generates an invite code for Crew & Doctors, seeds your daily/weekly calendar, and keeps all readings empty until entered.",
+    "back": "Back",
+    "continue": "Continue",
+    "launching": "Launching...",
+    "launchMission": "Launch Mission",
+    "errName": "Enter the mission name (typed explicitly by the Commander).",
+    "errStartDate": "Enter a valid UTC start date (YYYY-MM-DD).",
+    "errPlannedDays": "Planned duration must be between 1 and 3,650 days.",
+    "configuredToast": "Mission configured"
+  },
+  "health": {
+    "title": "Health Monitoring",
+    "subtitleAuth": "Manual crew health readings with active NASA, Clinical, and Prototype rules.",
+    "subtitleDemo": "All simulated values without verified metadata show NOT_CONFIGURED.",
+    "viewCrewLabel": "View Crew Member Readings",
+    "allCrewOption": "All mission crew",
+    "enterReading": "Enter reading",
+    "sourceNotSupplied": "Source: not supplied",
+    "backToHealth": "Back to Health",
+    "indicatorNotFound": "Indicator not found",
+    "indicatorNotFoundDesc": "The requested health indicator does not exist in this prototype.",
+    "latestReading": "Latest Reading",
+    "timestampUtc": "Timestamp (UTC)",
+    "sourceDevice": "Source / Device",
+    "dataQuality": "Data quality",
+    "provenanceLabel": "Provenance",
+    "historyCount": "History ({count})",
+    "history": "History",
+    "noEntriesYet": "No entries recorded in this mission yet.",
+    "sleepDemoCaption": "Five supplied records, hours per day. Reference lines: 7.0h clinical minimum, 8.5h NASA scheduled sleep period.",
+    "insufficientHistory": "Insufficient history. Only the latest simulated value was supplied.",
+    "activeRulesNoDiag": "Active Rules (No Diagnosis)",
+    "rulesLead": "ASTRA does not diagnose or interpret readings. Rules trigger procedural next steps only.",
+    "nextStepPrefix": "Next step:",
+    "assessmentExplanation": "Assessment explanation",
+    "timestamp": "Timestamp",
+    "source": "Source",
+    "baseline": "Baseline",
+    "ruleStatus": "Rule status",
+    "entryIndex": "Entry {n}",
+    "dayIndex": "Day {n}",
+    "simDetailsHeading": "Simulated measurement details"
+  },
+  "risks": {
+    "commanderOnlyTitle": "Mission Risks (Commander Only)",
+    "commanderOnlyDesc": "Weekly hazard monitoring and environmental logs are restricted to the Mission Commander.",
+    "title": "Mission Risks",
+    "subtitleAuth": "Weekly Commander hazard logs with NASA-STD-3001 reference checks.",
+    "subtitleDemo": "Read-only spaceflight risk categories. ASTRA does not diagnose, prescribe countermeasures, or control spacecraft systems.",
+    "lastEntry": "Last entry: {ts} ({source})",
+    "noWeeklyEntry": "No weekly entry yet. Open to enter reading.",
+    "openAndEnter": "Open & Enter",
+    "details": "Details",
+    "backToRisks": "Back to Risks",
+    "commanderAccessRequired": "Commander Hazard Access Required",
+    "notFound": "Risk category not found",
+    "radEduHeading": "Radiation Reference Context (Separate Gy & Sv)",
+    "radEduBody": "Absorbed dose (mGy) and equivalent/effective dose (mSv) measure distinct physical and biological quantities and are NEVER converted into each other. NASA-STD-3001 career effective dose limit is 600 mSv (universal for age and sex); 30-day SPE reference is below 250 mSv; ISS effective dose is typically 0.2 to 0.5 mSv/day. ISS-RAD alarms for crew shelter decisions while CAD tracks personal accumulated dose and rate.",
+    "careerEffTotal": "Career Effective Total",
+    "remainingMsv": "Remaining: {val} mSv",
+    "trailing30dEff": "Trailing 30-Day Effective",
+    "absorbedSeparate": "Absorbed Dose (Separate)",
+    "mGyMissionTotal": "mGy mission total",
+    "weeklyRadEntry": "Weekly Radiation Entry",
+    "detector": "Detector",
+    "customDetector": "Custom detector",
+    "detectorLocation": "Detector location / module",
+    "detectorIdOpt": "Detector ID (optional)",
+    "absRateLabel": "Absorbed dose rate (mGy/day)",
+    "effRateLabel": "Effective dose rate (mSv/day)",
+    "accAbsLabel": "Mission accumulated absorbed (mGy)",
+    "accEffLabel": "Mission accumulated effective (mSv)",
+    "priorCareerLabel": "Prior career effective dose (mSv; 0 = None entered)",
+    "solarStatusLabel": "Solar event status",
+    "speNone": "None observed",
+    "speInProgress": "SPE in progress",
+    "speEnded": "SPE ended",
+    "solarNotesLabel": "Solar event notes (optional)",
+    "measuredAtUtc": "Measured at (UTC)",
+    "now": "Now",
+    "saving": "Saving...",
+    "saveRadEntry": "Save Weekly Radiation Entry",
+    "weeklyAtmoHeading": "Weekly Cabin Atmosphere Sampling",
+    "atmoSource": "Atmosphere source",
+    "customAtmoSource": "Custom atmosphere source",
+    "co2SamplesHeading": "ppCO2 Samples (15-min spacing for verified 1-hour average)",
+    "sampleOffset": "Sample {index} ({offset} min, mmHg)",
+    "ppo2Label": "ppO2 (mmHg, normoxia 145–155)",
+    "pressureLabel": "Total Pressure ({unit})",
+    "diluentLabel": "Diluent gas % (>= 30%)",
+    "tempLabel": "Temperature ({unit})",
+    "rhLabel": "Relative Humidity % (perf 30–60)",
+    "ventLabel": "Ventilation status",
+    "ventNominal": "Nominal",
+    "ventDegraded": "Degraded",
+    "ventOff": "Off",
+    "sevenDayCo2Label": "7-day mean ppCO2 (mmHg, TB-004 <2.5)",
+    "saveEnvLog": "Save Weekly Atmosphere Log",
+    "latestCo2Heading": "Latest Verified CO2 Analysis",
+    "co2AnalysisSummary": "Samples: {count} | Coverage: {minutes} min | Verified 1h avg: {avg}",
+    "weeklyGravHeading": "Weekly Gravity & Exercise Schedule",
+    "gravRefDesc": "NASA ISS reference: 2.5-hour blocks six days a week (1.5 h resistive + 1 h aerobic), with one rest day. Never ranks crew members.",
+    "gravEnvLabel": "Gravity environment",
+    "gravEnvDefault": "Microgravity (LEO)",
+    "weeklyExDaysLabel": "Scheduled exercise days completed (0–7)",
+    "saveGravEntry": "Save Weekly Gravity Entry",
+    "crewExTotalsHeading": "Logged Crew Weekly Exercise Minutes (Non-Ranked)",
+    "crewExItem": "{minutes} min ({sessions} session(s))",
+    "isoPrivacyBanner": "Privacy rule: Commander sees aggregate-only participation counts and ground-contact logs. Individual mood, stress, and sleep records remain strictly private.",
+    "aggCheckinHeading": "Aggregate Check-In Participation",
+    "aggCheckinText": "{count} of {total} mission member(s) logged a private behavioral check-in in the past 24 hours.",
+    "weeklyIsoHeading": "Weekly Isolation & Ground Contact Log",
+    "groundSessionsLabel": "Ground-contact sessions this week",
+    "daysSinceContactLabel": "Days since last ground contact (>7 triggers INFO)",
+    "saveIsoEntry": "Save Weekly Isolation Entry",
+    "weeklyDistHeading": "Weekly Distance & Communication Link Entry",
+    "distKmLabel": "Spacecraft distance from Earth (km)",
+    "commStatusLabel": "Communication link status",
+    "commNominal": "Nominal",
+    "commDegraded": "Degraded (R-DST-01 MONITOR)",
+    "commLoss": "Loss of signal (R-DST-02 ALERT)",
+    "sourceLabel": "Source",
+    "customDistSource": "Custom distance source",
+    "updateDistBtn": "Update Distance & Link Status",
+    "radUnavailable": "Radiation data unavailable",
+    "absorbedDoseGy": "Absorbed dose (Gy)",
+    "effectiveDoseSv": "Equivalent / effective dose (Sv)",
+    "radSeparateNote": "Absorbed dose (Gy) and equivalent/effective dose (Sv) are always shown separately.",
+    "isoPrivateBanner": "Private view. Psychological results are not shared or compared.",
+    "sleepTrend": "Sleep trend",
+    "co2SimChartTitle": "Simulated CO2 samples (mmHg)",
+    "instantaneousReading": "Instantaneous reading",
+    "oneSampleSuffix": "{time}, one sample",
+    "illustrativeMean": "Illustrative sample mean",
+    "meanOfSamplesNote": "Mean of {count} samples. Not a verified one-hour average.",
+    "verified1hAvg": "Verified rolling one-hour average",
+    "windowCoverage": "Window: {first} to {last} ({minutes} min of 60).",
+    "demoSignInCommander": "Sign in as Mission Commander to enter weekly telemetry and hazard records.",
+    "recordedEntriesHeading": "Recorded Weekly Entries ({count})",
+    "hazardSavedAlertsToast": "Hazard saved ({count} alert triggered)",
+    "hazardSavedToast": "Hazard entry recorded",
+    "invalidUtcErr": "Enter a valid UTC timestamp.",
+    "co2SummaryMetricsAria": "CO2 summary metrics",
+    "otherInstrumentFallback": "Other",
+    "recordedEntryLine": "{category} • {source} ({quality})",
+    "co2VerifiedAvgUnit": "{value} mmHg"
+  },
+  "calendar": {
+    "emptyTitle": "Mission Calendar",
+    "emptyDesc": "Configure or join a mission to view your scheduled protocol calendar.",
+    "title": "Mission Calendar (UTC)",
+    "subtitle": "Server-generated daily and weekly schedules for {mission}.",
+    "gridAria": "7-day UTC calendar grid",
+    "completedCount": "{done}/{count} completed",
+    "scheduleForDay": "Schedule for {date} UTC",
+    "noTasksForDay": "No scheduled protocol tasks for {date}.",
+    "dueUtc": "Due {time} UTC",
+    "deferralReason": "Deferral reason: {reason}",
+    "startEntry": "Start entry",
+    "complete": "Complete",
+    "defer": "Defer"
+  },
+  "alerts": {
+    "title": "Alerts & Problem Reports",
+    "subtitle": "Role-scoped notifications rendered from approved rules. Decision-support prototype.",
+    "reportHeading": "Report a Problem to Flight Doctor",
+    "reportHelp": "Standard reports notify the Doctor for review. Urgent reports dispatch an immediate HIGH PRIORITY alert via SSE to all Doctors.",
+    "reportDescLabel": "Description (displayed verbatim as Original text)",
+    "reportPlaceholder": "Describe symptom, equipment concern, or operational issue...",
+    "urgentCheckbox": "Urgent — notify all Doctors immediately as HIGH PRIORITY",
+    "submitReport": "Submit problem report",
+    "sending": "Sending...",
+    "reportMinLenErr": "Describe the issue or concern (at least 3 characters).",
+    "reportSentToast": "Problem report sent ({id})",
+    "ackToast": "Alert {id} acknowledged",
+    "feedHeading": "Role Notifications ({count})",
+    "relatedMeasurement": "Related measurement",
+    "crewMember": "Crew member",
+    "timestamp": "Timestamp",
+    "source": "Source",
+    "triggeredRule": "Triggered rule",
+    "explanation": "Explanation",
+    "approvedNextStep": "Approved next step",
+    "ackButton": "Acknowledge alert",
+    "newAlertToast": "New alert: {id}",
+    "highPriorityToast": "HIGH PRIORITY: {id}",
+    "sseHighTitle": "ASTRA HIGH PRIORITY ({id})",
+    "sseNormalTitle": "ASTRA Alert ({id})",
+    "ackFailedToast": "Acknowledge failed"
+  },
+  "rules": {
+    "title": "Reference Rules & Thresholds",
+    "subtitle": "Decision-support prototype. Not a validated clinical system. Rules are seeded ACTIVE with explicit NASA, Clinical, or Prototype Default provenance.",
+    "editNoteBanner": "NASA REFERENCE thresholds are read-only. Doctors may edit PROTOTYPE DEFAULT rules and approved next-step guidance text; every edit is audit-logged.",
+    "threshold": "Threshold",
+    "explanation": "Explanation",
+    "approvedNextStep": "Approved next step",
+    "source": "Source",
+    "editBtn": "Edit prototype default",
+    "editThresholdLabel": "Custom threshold expression",
+    "editGuidanceLabel": "Approved next step guidance (displayed verbatim)",
+    "saveEditBtn": "Save rule edit",
+    "cancel": "Cancel",
+    "updatedToast": "Rule {id} updated",
+    "auditHeading": "Doctor Rule Change Audit Log",
+    "noRuleMods": "No rule modifications recorded yet.",
+    "auditLine": "{ruleId} edited by {actor}: threshold {prev} → {next}"
+  },
+  "sources": {
+    "title": "Data Sources & Provenance",
+    "subtitle": "Authoritative reference documents, seeded threshold provenance, and mission entry counts.",
+    "provenanceAria": "Mission data provenance counts",
+    "selfReportedDesc": "Mood & stress self-report records in mission",
+    "manualEntryDesc": "Instrument readings entered online",
+    "offlineQueuedDesc": "Entries synced from IndexedDB offline queue",
+    "docsHeading": "Reference Documents",
+    "openSource": "Open source ({host})",
+    "summaryHeading": "Seeded Rules Summary",
+    "colRuleId": "Rule ID",
+    "colParameter": "Parameter",
+    "colValue": "Value",
+    "colLabel": "Label",
+    "colStatus": "Status",
+    "colSource": "Source"
+  },
+  "protocol": {
+    "title": "Protocols & Tasks",
+    "subtitle": "Seeded measurement protocols with device guidance, plus scheduled protocol tasks.",
+    "seededHeading": "Measurement Protocols ({count})",
+    "estMinutes": "Estimated time: {minutes} min",
+    "startEntry": "Start entry",
+    "createCustomHeading": "Create custom task",
+    "taskNameLabel": "Task name",
+    "taskNamePlaceholder": "e.g. Hydration check",
+    "dueTimeLabel": "Due time",
+    "createTaskBtn": "Create task",
+    "missingTaskFields": "Enter a task name and a due time.",
+    "queueHeading": "Task Queue",
+    "emptyQueue": "No tasks yet. Create a custom task above or open Calendar.",
+    "dueSimple": "Due {due}",
+    "deferralReason": "Deferral reason: {reason}",
+    "complete": "Complete",
+    "defer": "Defer",
+    "completeAria": "Complete {name}",
+    "deferAria": "Defer {name}",
+    "historyHeading": "Task history",
+    "noActionsRecorded": "No actions recorded.",
+    "taskCreatedToast": "Task created",
+    "taskCompletedToast": "Task completed",
+    "taskDeferredToast": "Task deferred",
+    "saveFailedToast": "Save failed"
+  },
+  "entry": {
+    "logFallbackTitle": "Log {indicator} Reading",
+    "close": "Close",
+    "hrBpm": "Heart rate (bpm)",
+    "hrContext": "Context (rules apply only to Resting)",
+    "ctxResting": "Resting",
+    "ctxAfterEx": "After exercise",
+    "ctxOther": "Other",
+    "bpSys": "Systolic (mmHg)",
+    "bpDia": "Diastolic (mmHg)",
+    "sleepHours": "Total sleep duration (hours)",
+    "sleepStartOpt": "Sleep start (UTC, optional)",
+    "sleepEndOpt": "Sleep end (UTC, optional)",
+    "moodLabel": "Mood level (private; never shared with Commander)",
+    "mood1": "1 — Very low",
+    "mood2": "2 — Low",
+    "mood3": "3 — Neutral",
+    "mood4": "4 — Good",
+    "mood5": "5 — Very good",
+    "stressLabel": "Stress self-rating (0–100, private)",
+    "actTypeLabel": "Exercise type",
+    "actResistive": "Resistive (NASA ref 1.5 h)",
+    "actAerobic": "Aerobic (NASA ref 1.0 h)",
+    "actOther": "Other",
+    "actDurationLabel": "Duration (minutes)",
+    "actCompleted": "Session completed",
+    "measuredAtUtc": "Measured at (UTC)",
+    "now": "Now",
+    "lateNoteLabel": "Late entry note (required > 7 days old)",
+    "lateNotePlaceholder": "Explain why entry is delayed > 7 days",
+    "deviceSourceLabel": "Measurement device / source",
+    "customSourceLabel": "Specify device / source",
+    "customSourcePlaceholder": "Type instrument or source name",
+    "deviceIdOpt": "Device ID / serial (optional)",
+    "deviceIdPlaceholder": "e.g. BP-CUFF-02",
+    "selfReportBadgeNote": "Self-report scale, prototype instrument v1",
+    "saving": "Saving...",
+    "saveMeasurement": "Save measurement",
+    "cancel": "Cancel",
+    "errInvalidUtc": "Enter a valid UTC measurement date and time.",
+    "errFutureTs": "Measurement timestamp cannot be in the future.",
+    "errLateNote": "Measurements older than 7 days require a late entry explanation note.",
+    "errNoSource": "Specify the measurement instrument or source.",
+    "errHrRange": "Heart rate must be between 20 and 260 bpm.",
+    "errBpRange": "Enter valid systolic and diastolic mmHg values.",
+    "errSleepRange": "Sleep hours must be between 0 and 24.",
+    "errStressRange": "Stress score must be between 0 and 100.",
+    "errActRange": "Activity duration must be between 0 and 600 minutes.",
+    "queuedOfflineToast": "Queued offline for sync",
+    "unreachableQueuedToast": "Connection unavailable — queued offline",
+    "savedAlertsToast": "Saved ({count} alert triggered)",
+    "readingRecordedToast": "Reading recorded"
+  },
+  "defer": {
+    "title": "Defer task",
+    "taskLabel": "Task: {name}",
+    "reasonLabel": "Reason (required)",
+    "reasonPlaceholder": "Enter reason for deferring this simulated task",
+    "confirm": "Confirm deferral",
+    "cancel": "Cancel"
+  },
+  "assistant": {
+    "title": "Guided Health Assistant",
+    "subtitle": "Decision-support prototype. Explains active alerts strictly from stored rule fields. No AI inference or clinical diagnosis is performed.",
+    "scopeHeading": "Scope & Constraints",
+    "scopeDesc": "Explains alerts using approved content only: triggered rule, related measurement, timestamp, source, approved next step, and acknowledgement state.",
+    "whyBtn": "Why is this alert appearing?",
+    "noAlertHeading": "No alert is active",
+    "noAlertsAuth": "No unacknowledged alerts are currently active for your role.",
+    "noAlertsDemo": "No alert rules or alert scenarios are configured in Demo baseline, so there is no active alert to explain.",
+    "explanationAria": "Explanation for {id}",
+    "triggeredRule": "Triggered rule",
+    "relatedMeasurement": "Related measurement",
+    "timestampUtc": "Timestamp (UTC)",
+    "source": "Source",
+    "explanation": "Explanation",
+    "approvedNextStep": "Approved next step",
+    "escalationContact": "Escalation contact",
+    "escCommander": "Mission Control / Approved Contingency Support",
+    "escDoctor": "Designated Flight Surgeon / Mission Doctor",
+    "ackState": "Acknowledgement state"
+  },
+  "telemetry": {
+    "title": "Flight Telemetry",
+    "subtitleAuth": "Read-only trajectory schematic derived from mission distance (logarithmic scale).",
+    "subtitleDemo": "Read-only telemetry schematic. No trajectory or distance feed is supplied in this prototype.",
+    "schematicHeading": "Earth-to-Spacecraft Link Schematic",
+    "earth": "Earth",
+    "moonLabel": "Moon (384,400 km)",
+    "spacecraft": "Spacecraft",
+    "distanceKnown": "Distance: {val} {unit}",
+    "distanceUnknown": "Distance: UNKNOWN",
+    "schematicCaption": "Schematic, not to scale (logarithmic distance axis)",
+    "svgAriaKnown": "Logarithmic trajectory schematic showing Earth, Moon marker at 384,400 km, and Spacecraft at {km} km.",
+    "svgAriaUnknown": "Schematic showing Earth on the left, spacecraft on the right, a dashed link line, and text Distance: UNKNOWN.",
+    "paramsHeading": "Telemetry parameters",
+    "howCalculated": "How is this calculated?",
+    "calcBanner": "One-way light time = distance_km / 299,792.458 km/s; round trip = 2 × one-way. Mission day = floor((today UTC − start date) / 1 day) + 1.",
+    "missionLabel": "Mission",
+    "timelineLabel": "Timeline",
+    "timelineVal": "Day {day} / {planned} ({percent}%)",
+    "distanceLabel": "Distance",
+    "oneWayLabel": "One-way delay",
+    "connectionLabel": "Connection",
+    "lastSyncLabel": "Last synchronization"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Appearance, notifications, display units, data privacy, and account session controls.",
+    "profileLink": "Profile & Sim",
+    "sectionsAria": "Settings sections",
+    "secAppearance": "Appearance",
+    "secNotifications": "Notifications",
+    "secUnits": "Units",
+    "secData": "Data & Privacy",
+    "secAccount": "Account",
+    "savedMsg": "Saved",
+    "themeLabel": "Theme",
+    "themeDark": "Dark",
+    "themeLight": "Light",
+    "themeSystem": "System",
+    "themeAria": "Theme",
+    "languageLabel": "Language",
+    "languageAria": "Language",
+    "english": "English",
+    "arabic": "العربية",
+    "numeralsLabel": "Numerals (non-clinical text)",
+    "numeralsAria": "Numerals",
+    "numeralsWestern": "Western (0–9)",
+    "numeralsArabicIndic": "Arabic-Indic (٠–٩)",
+    "numeralsHint": "Affects only non-clinical text such as dates and counters. Clinical measurements and unit symbols always use Western digits.",
+    "inAppMonitor": "In-app MONITOR notifications",
+    "inAppReview": "In-app REVIEW notifications",
+    "inAppHighPriority": "In-app HIGH PRIORITY notifications",
+    "browserNotifs": "Browser notifications ({perm})",
+    "browserNotifsDesc": "Uses OS notifications when ASTRA tab is open.",
+    "browserNotifsAria": "Enable browser notifications",
+    "requestPerm": "Request permission",
+    "reminderUtc": "Daily reminder time (UTC)",
+    "quietHoursToggle": "Enable quiet hours (never suppresses HIGH PRIORITY)",
+    "quietStart": "Quiet start (UTC)",
+    "quietEnd": "Quiet end (UTC)",
+    "saveNotifsBtn": "Save notification preferences",
+    "browserUnsupported": "Browser notifications are not supported in this environment.",
+    "browserPermMsg": "Browser notification permission is {result}.",
+    "browserPermErr": "Could not request browser notification permission.",
+    "displayUnitsTitle": "Display Units",
+    "unitsBanner": "Conversions apply at display time only. Stored values remain in base units. Blood pressure is always shown in mmHg. Radiation absorbed dose (mGy) and effective dose (mSv) are never converted between each other.",
+    "tempLabel": "Temperature",
+    "tempUnitAria": "Temperature unit",
+    "tempC": "Celsius (°C)",
+    "tempF": "Fahrenheit (°F)",
+    "pressureLabel": "Cabin Pressure",
+    "pressureUnitAria": "Pressure unit",
+    "distLabel": "Distance",
+    "distanceUnitAria": "Distance unit",
+    "distKm": "Kilometers (km)",
+    "distMi": "Miles (mi)",
+    "exportTitle": "Export My Data",
+    "exportDesc": "Values are exported exactly as entered with timestamps, provenance, and status codes. Nothing is estimated or extrapolated.",
+    "exportJsonBtn": "Export my data (JSON)",
+    "exportQueueBtn": "Export unsynced queue ({count})",
+    "offlineExportNote": "Full export requires connectivity; only exporting your queued local entries is enabled while offline.",
+    "offlineOnlyErr": "Offline: only exporting queued offline entries is available.",
+    "exportFailedErr": "Export failed.",
+    "jsonExportedMsg": "Personal JSON package downloaded",
+    "perm_default": "default",
+    "perm_granted": "granted",
+    "perm_denied": "denied",
+    "perm_unsupported": "unsupported",
+    "privacyTitle": "Privacy Statement",
+    "privacyBody": "Psychological results stay private. No public comparisons or rankings. Decision-support prototype. Not a validated clinical system.",
+    "deleteTitle": "Delete My Data",
+    "deleteDesc": "Permanently removes your daily readings, tasks, alerts, problem reports, and achievements from this mission database. Your preferences are retained locally unless cleared.",
+    "exportFirst": "Export first",
+    "typeDeletePrompt": "Type DELETE to confirm",
+    "deletePlaceholder": "DELETE",
+    "deleting": "Deleting...",
+    "deleteBtn": "Delete my data",
+    "deleteAuthErr": "Sign in to an account to delete server-stored records.",
+    "deleteConfirmErr": "Type DELETE in all capitals to confirm.",
+    "deleteSuccessMsg": "Your personal health records, tasks, and achievements were deleted.",
+    "deleteToast": "Personal data deleted",
+    "sessionTitle": "Active Session",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "roleLabel": "Role",
+    "missionLabel": "Mission",
+    "demoSessionNote": "Demo session active. Sign in with an account to manage server passwords and sessions.",
+    "signOutBtn": "Sign out",
+    "changePwTitle": "Change Password",
+    "curPw": "Current password",
+    "newPw": "New password (min 8 characters)",
+    "confirmPw": "Confirm new password",
+    "updatingPw": "Updating...",
+    "changePwBtn": "Change password",
+    "pwUpdatedMsg": "Saved: Password updated.",
+    "pwLenErr": "Enter current password and a new password of at least 8 characters.",
+    "pwMismatchErr": "New password confirmation does not match.",
+    "logoutAllTitle": "Sign Out of All Devices",
+    "logoutAllDesc": "Invalidates every active session cookie across all browsers and devices immediately. Requires password re-entry.",
+    "reenterPw": "Re-enter password",
+    "revoking": "Revoking...",
+    "logoutAllBtn": "Sign out of all devices",
+    "logoutAllPwErr": "Enter your password to sign out of all devices."
+  },
+  "profile": {
+    "title": "Profile & Settings",
+    "subtitleDemo": "Prototype configuration and simulation controls.",
+    "openSettings": "Open Settings",
+    "accountProfile": "Account Profile",
+    "demoProfile": "Demonstration profile",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "missionLabel": "Mission",
+    "demoSessionDesc": "Demo session active. Sign in or register for mission persistence.",
+    "connSimTitle": "Connection & Offline Simulation",
+    "reconnect": "Reconnect",
+    "simulateOffline": "Simulate offline",
+    "offlineNote": "Offline mode active. New readings are queued in IndexedDB until reconnected.",
+    "privacyTitle": "Privacy",
+    "configTitle": "Configuration & Preferences",
+    "configDesc": "Manage theme (Dark / Light / System), language, numeral style, notification reminders, display units, data export, and session security in Settings.",
+    "goToSettings": "Go to Settings"
+  },
+  "signout": {
+    "title": "Sign out of ASTRA?",
+    "queueWarning": "You have {count} unsynced queued {entryWord} stored locally. Signing out without syncing or exporting will discard them.",
+    "entrySingle": "entry",
+    "entryPlural": "entries",
+    "syncing": "Syncing...",
+    "syncAndSignOut": "Sync now, then sign out",
+    "exportAndSignOut": "Export them and sign out",
+    "discardAndSignOut": "Sign out and discard",
+    "cancel": "Cancel",
+    "body": "Your local workspace caches and real-time stream will close. Theme, language, numerals, notifications, and unit preferences remain saved.",
+    "signingOut": "Signing out...",
+    "confirm": "Sign out"
+  },
+  "idle": {
+    "title": "Still there?",
+    "countdownText": "No activity detected for 30 minutes. ASTRA will sign you out in {seconds}s to protect sensitive health data.",
+    "queueBanner": "{count} unsynced offline {entryPhrase} queued locally. If signed out automatically, unsynced items will be synced or exported first.",
+    "entryPhraseSingle": "entry is",
+    "entryPhrasePlural": "entries are",
+    "staySignedIn": "Stay signed in",
+    "syncThenSignOut": "Sync now, then sign out",
+    "exportAndSignOut": "Export queue and sign out",
+    "signOutNow": "Sign out now"
+  },
+  "charts": {
+    "sleepAria": "Sleep duration bar chart in hours with 7h clinical reference and 8.5h NASA scheduled sleep lines. {summary}.",
+    "sleepRefNasa": "8.5h NASA scheduled sleep",
+    "sleepRefClinical": "7.0h clinical minimum (AASM/SRS)",
+    "co2Aria": "Cabin CO2 line chart in mmHg with 3 mmHg one-hour average reference line. Samples: {summary}.",
+    "co2RefLine": "3 mmHg reference (one-hour average criterion)",
+    "hoursWord": "hours"
+  },
+  "kb": {
+    "templates": {
+      "leo_iss": {
+        "title": "LEO Station (ISS-class)",
+        "desc": "Orbital altitude ~400 km, ~92 min orbit (~16 sunrises/sunsets per day). GCR reference 1.3 mSv/day; typical ISS effective dose 0.2–0.5 mSv/day; typical badge absorbed dose < 0.3 mGy/day."
+      },
+      "lunar": {
+        "title": "Lunar Orbit / Lunar Surface",
+        "desc": "Average Earth-Moon distance ~384,400 km (~1.28 s one-way light time, ~2.56 s round trip). Surface GCR reference 0.8 mSv/day; free-space GCR reference 1.3 mSv/day."
+      },
+      "mars": {
+        "title": "Mars Transit / Mars Surface",
+        "desc": "Earth-Mars distance varies roughly 54.6 million km to 401 million km (~3 to 22 minutes one-way light time). Default weekly entry carries forward the previously entered distance."
+      }
+    },
+    "sources": {
+      "std3001_v1": {
+        "title": "NASA-STD-3001 Volume 1: Crew Health",
+        "note": "Human integration crew health & medical standards (radiation career limit 600 mSv, behavioral/sleep health context)."
+      },
+      "std3001_v2": {
+        "title": "NASA-STD-3001 Volume 2: Human Factors, Habitability, and Environmental Health",
+        "note": "Environmental requirements V2 6002–6013 (ppCO2, ppO2, cabin pressure, temperature/RH envelopes)."
+      },
+      "tb002": {
+        "title": "NASA OCHMO Technical Brief TB-002: ECLSS Atmosphere",
+        "note": "Environmental Control and Life Support System atmosphere parameters and crew normoxia context."
+      },
+      "tb004": {
+        "title": "NASA OCHMO Technical Brief TB-004: Carbon Dioxide",
+        "note": "Links keeping 7-day average ppCO2 below 2.5 mmHg to <1% headache risk."
+      },
+      "tb020": {
+        "title": "NASA OCHMO Technical Brief TB-020: Space Radiation",
+        "note": "Radiation exposure context, shielding, and Solar Particle Event (SPE) operational practices."
+      },
+      "srag": {
+        "title": "NASA SRAG Radiation Detector Reference Pages",
+        "note": "Roles of Crew Active Dosimeter (CAD), ISS-RAD alarm & trending, REM2, HERA, TEPC, and passive dosimeters."
+      },
+      "ntrs_exercise": {
+        "title": "NASA NTRS 20110016265: ISS Exercise Countermeasures",
+        "note": "ISS reference countermeasure block: 2.5 hours/day, 6 days/week (1.5 h resistive + 1 h aerobic, 1 rest day)."
+      },
+      "pmc_radiation": {
+        "title": "Space agency-specific standards for crew dose and risk assessment of ionising radiation exposures for the ISS",
+        "note": "International ISS radiation limit comparison, 30-day SPE reference (< 250 mSv), and Gy vs Sv distinction."
+      },
+      "acc_aha": {
+        "title": "ACC/AHA 2017 Guideline for High Blood Pressure in Adults",
+        "note": "Blood pressure categories (>=130/80, >=140/90, >180/120 mmHg) and standardized seated measurement protocol."
+      },
+      "aasm_srs": {
+        "title": "AASM/SRS 2015 Joint Consensus Statement on Adult Sleep Duration",
+        "note": "Adults should sleep 7 or more hours per night on a regular basis."
+      }
+    },
+    "instruments": {
+      "cad": {
+        "name": "Crew Active Dosimeter (CAD)",
+        "desc": "Personal active dosimeter showing total mission dose and recent dose rate."
+      },
+      "iss_rad": {
+        "name": "ISS-RAD (Radiation Assessment Detector)",
+        "desc": "Active monitor with alarm role for crew shelter decisions and trending role."
+      },
+      "rem2": {
+        "name": "REM2 (Timepix Radiation Environment Monitor)",
+        "desc": "Timepix-based active radiation environment spectrometer."
+      },
+      "hera": {
+        "name": "HERA (Hybrid Electronic Radiation Assessor)",
+        "desc": "Orion/Gateway hybrid electronic radiation assessor."
+      },
+      "tepc": {
+        "name": "Tissue Equivalent Proportional Counter (TEPC)",
+        "desc": "Microdosimetric instrument measuring absorbed dose and LET spectrum."
+      },
+      "passive": {
+        "name": "Passive crew dosimeter",
+        "desc": "Cumulative passive badge dosimeter read post-mission."
+      },
+      "crew_medical": {
+        "name": "Crew medical device (approved)",
+        "desc": "Mission-approved crew medical measurement instrument."
+      },
+      "manual": {
+        "name": "Manual measurement",
+        "desc": "Direct manual measurement by crew or operator."
+      },
+      "wearable": {
+        "name": "Wearable",
+        "desc": "Approved crew wearable sensor."
+      },
+      "vehicle_atmo": {
+        "name": "Vehicle atmosphere monitor display",
+        "desc": "Primary spacecraft cabin atmosphere monitor display."
+      },
+      "portable_gas": {
+        "name": "Portable gas analyzer",
+        "desc": "Handheld / portable cabin gas analyzer."
+      },
+      "mission_uplink": {
+        "name": "Mission control uplink",
+        "desc": "Ground mission control ranging & link telemetry."
+      },
+      "onboard_nav": {
+        "name": "Onboard navigation display",
+        "desc": "Spacecraft onboard navigation state display."
+      },
+      "template_default": {
+        "name": "Template default",
+        "desc": "Pre-entry default physical distance from mission template."
+      },
+      "other": {
+        "name": "Other (type it)",
+        "desc": "Enter specific device or instrument name."
+      }
+    },
+    "rules": {
+      "R-RAD-01": {
+        "title": "Absorbed Dose Rate Above Typical LEO Range",
+        "explanation": "Absorbed dose rate exceeds 0.4 mGy/day, which is above the typical LEO crew badge range (< 0.3 mGy/day).",
+        "next_step": "Confirm detector reading and location, compare with a second instrument if available, and record the source.",
+        "source": "NASA SRAG / LEO Dosimetry Context"
+      },
+      "R-RAD-02": {
+        "title": "Radiation Dose Margin Reached 50%",
+        "explanation": "Career effective dose >= 50% of 600 mSv or trailing 30-day effective dose >= 50% of 250 mSv.",
+        "next_step": "Continue scheduled weekly dosimetry logging and review exposure trends with mission planning.",
+        "source": "Prototype margin on NASA-STD-3001 600 mSv career / 250 mSv 30-day references"
+      },
+      "R-RAD-03": {
+        "title": "Radiation Dose Margin Reached 80%",
+        "explanation": "Career effective dose >= 80% of 600 mSv or trailing 30-day effective dose >= 80% of 250 mSv.",
+        "next_step": "Notify the Doctor and mission support; follow the mission ALARA procedures.",
+        "source": "Prototype margin on NASA-STD-3001 600 mSv career / 250 mSv 30-day references"
+      },
+      "R-RAD-04": {
+        "title": "NASA Effective Dose Reference Reached",
+        "explanation": "Career effective dose >= 600 mSv universal limit or trailing 30-day effective dose >= 250 mSv reference.",
+        "next_step": "Immediately notify mission support and Flight Surgeon / Doctor; execute approved dose-limit operational procedures.",
+        "source": "NASA-STD-3001 Vol 1 (600 mSv career limit) & ISS 30-day SPE reference (250 mSv)"
+      },
+      "R-RAD-05": {
+        "title": "Solar Particle Event (SPE) In Progress",
+        "explanation": "Commander logged Solar Event Status = SPE in progress.",
+        "next_step": "Follow the mission approved solar particle event contingency procedures (shielding/shelter plan) and contact mission support.",
+        "source": "NASA OCHMO TB-020 / NASA SRAG ISS-RAD Shelter Operations"
+      },
+      "R-ENV-01": {
+        "title": "Verified 1-Hour Average ppCO2 Exceeds 3 mmHg",
+        "explanation": "Verified rolling 1-hour average (>= 5 samples, >= 60 min span, max gap <= 20 min) exceeds NASA-STD-3001 [V2 6004] 3.0 mmHg criterion.",
+        "next_step": "Check ventilation and CO2 removal status on the approved vehicle displays, re-sample, notify mission support; crew reporting symptoms should contact the Doctor.",
+        "source": "NASA-STD-3001 Vol 2 [V2 6004]"
+      },
+      "R-ENV-02": {
+        "title": "Single ppCO2 Sample Above 3 mmHg (Coverage Incomplete)",
+        "explanation": "A single ppCO2 sample exceeds 3.0 mmHg while 1-hour sampling coverage is not yet verified.",
+        "next_step": "Single sample above 3 mmHg; the one-hour average cannot be verified yet. Continue sampling every 15 minutes until coverage >= 60 minutes.",
+        "source": "NASA-STD-3001 Vol 2 [V2 6004] Sampling Protocol"
+      },
+      "R-ENV-03": {
+        "title": "7-Day Average ppCO2 Above 2.5 mmHg",
+        "explanation": "7-day mean ppCO2 exceeds 2.5 mmHg; NASA OCHMO TB-004 links keeping the 7-day average below 2.5 mmHg to <1% headache risk.",
+        "next_step": "Review scrubber performance trending on approved vehicle displays and continue scheduled sampling.",
+        "source": "NASA OCHMO Technical Brief TB-004"
+      },
+      "R-ENV-04": {
+        "title": "Cabin ppO2 Outside Normoxia Target Range",
+        "explanation": "Oxygen partial pressure is outside the NASA normoxia target range of 145 to 155 mmHg.",
+        "next_step": "Verify the sensor reading, check atmosphere control status on vehicle displays, and notify mission support.",
+        "source": "NASA-STD-3001 Vol 2 [V2 6003]"
+      },
+      "R-ENV-05": {
+        "title": "Total Pressure or Diluent Gas Outside Limits",
+        "explanation": "Total cabin pressure is outside 34.5–103 kPa or diluent gas fraction is below 30%.",
+        "next_step": "Immediately verify approved cabin pressure displays, inspect seals/atmosphere supply status, and notify mission support.",
+        "source": "NASA-STD-3001 Vol 2 [V2 6002 / V2 6006]"
+      },
+      "R-ENV-06": {
+        "title": "Temperature or Relative Humidity Outside Envelope",
+        "explanation": "Cabin temperature/humidity is outside crew performance zone (20–25 C, 30–60% RH) or outside crew health limits (18 C/75% RH to 27 C/25% RH).",
+        "next_step": "Check cabin thermal control status on approved displays, verify sensor accuracy, and notify mission support if outside health limits.",
+        "source": "NASA-STD-3001 Vol 2 [V2 6012 / V2 6013]"
+      },
+      "R-ENV-07": {
+        "title": "Cabin Ventilation Degraded or Off",
+        "explanation": "Commander logged cabin ventilation status as Degraded or Off.",
+        "next_step": "Confirm airflow status on approved vehicle displays, monitor ppCO2 closely, and follow mission ventilation contingency procedures.",
+        "source": "Prototype operational rule / ECLSS ventilation context"
+      },
+      "R-GRV-01": {
+        "title": "Weekly Exercise Days Below NASA 6-Day Reference",
+        "explanation": "Mission weekly exercise schedule logged fewer than 6 days against NASA ISS reference (2.5-hour blocks 6 days/week, 1 rest day).",
+        "next_step": "Operational note only: review equipment availability and crew schedule flexibility without ranking or comparing individuals.",
+        "source": "NASA NTRS 20110016265"
+      },
+      "R-ISO-01": {
+        "title": "Extended Interval Since Last Ground Contact",
+        "explanation": "More than 7 days recorded since the last scheduled ground-contact session.",
+        "next_step": "Note communication cadence in mission log and verify upcoming ground-support contact schedule.",
+        "source": "Prototype operational rule / Behavioral health context"
+      },
+      "R-DST-01": {
+        "title": "Spacecraft Communication Link Degraded",
+        "explanation": "Commander recorded communication link status as Degraded.",
+        "next_step": "Verify antenna/link telemetry and prepare offline protocols if delay or bandwidth worsens.",
+        "source": "Prototype operational rule"
+      },
+      "R-DST-02": {
+        "title": "Loss of Signal (Communication Link)",
+        "explanation": "Commander recorded Loss of Signal on the Earth-spacecraft link.",
+        "next_step": "Follow the mission communication-loss procedures; use locally stored protocols; ASTRA keeps working offline and queues entries.",
+        "source": "Prototype communication-loss contingency rule"
+      },
+      "R-HR-01": {
+        "title": "Resting Heart Rate Outside 60–100 bpm",
+        "explanation": "Resting heart rate reading is below 60 bpm or above 100 bpm (applied strictly to Resting context).",
+        "next_step": "Re-measure after 5 minutes of quiet rest using the same approved device, then record the repeat measurement.",
+        "source": "General published clinical adult resting HR reference (60–100 bpm)"
+      },
+      "R-HR-02": {
+        "title": "Consecutive Days Outside Resting Heart Rate Reference",
+        "explanation": "Two resting heart rate readings outside 60–100 bpm recorded on consecutive UTC days.",
+        "next_step": "Follow repeat measurement protocol and contact the designated Doctor for procedural review.",
+        "source": "Prototype consecutive-day monitoring rule"
+      },
+      "R-BP-01": {
+        "title": "Blood Pressure Elevated / Stage 1 Reference (>=130/80 mmHg)",
+        "explanation": "Systolic >= 130 mmHg or diastolic >= 80 mmHg per ACC/AHA 2017 categories.",
+        "next_step": "Follow BP measurement protocol (seated/relaxed 5 minutes, arm at heart level, two readings 1 minute apart) and re-record.",
+        "source": "ACC/AHA 2017 High Blood Pressure Guideline"
+      },
+      "R-BP-02": {
+        "title": "Blood Pressure Stage 2 Reference (>=140/90 mmHg)",
+        "explanation": "Systolic >= 140 mmHg or diastolic >= 90 mmHg per ACC/AHA 2017 categories.",
+        "next_step": "Repeat reading after 5 minutes of quiet rest (two readings 1 minute apart) and contact the Doctor for review.",
+        "source": "ACC/AHA 2017 High Blood Pressure Guideline"
+      },
+      "R-BP-03": {
+        "title": "Blood Pressure High-Priority Threshold (>180/120 mmHg)",
+        "explanation": "Systolic > 180 mmHg or diastolic > 120 mmHg.",
+        "next_step": "Follow BP measurement protocol immediately, repeat the reading to rule out artifact, and contact the Doctor immediately.",
+        "source": "ACC/AHA 2017 High Blood Pressure Guideline"
+      },
+      "R-BP-04": {
+        "title": "Low Blood Pressure Reference (<90/60 mmHg)",
+        "explanation": "Systolic < 90 mmHg or diastolic < 60 mmHg.",
+        "next_step": "Repeat reading after 5 minutes of quiet rest, verify cuff placement at heart level, and notify the Doctor if persistent or symptomatic.",
+        "source": "General published clinical reference"
+      },
+      "R-SLP-01": {
+        "title": "Sleep Duration Below 7.0 Hours",
+        "explanation": "Recorded sleep duration is below the 7.0-hour adult consensus minimum (NASA schedules 8.5 hours).",
+        "next_step": "Review rest schedule and lighting routine per mission guidelines; log upcoming sleep period on waking.",
+        "source": "AASM/SRS 2015 Consensus Statement & NASA-STD-3001 (8.5 h schedule)"
+      },
+      "R-SLP-02": {
+        "title": "Three Consecutive Nights Below 7.0 Hours",
+        "explanation": "Three consecutive sleep entries are below 7.0 hours.",
+        "next_step": "Doctor notified for procedural schedule review. Continue recording morning sleep hours.",
+        "source": "Prototype consecutive-night rule on AASM/SRS 7.0 h threshold"
+      },
+      "R-SLP-03": {
+        "title": "Downward Sleep Duration Trend (>=3 Decreasing Steps)",
+        "explanation": "Three or more consecutive decreasing sleep duration steps detected across stored nights.",
+        "next_step": "Informational trend notice: continue logging daily sleep duration upon waking.",
+        "source": "Prototype trend detection rule"
+      },
+      "R-MOOD-01": {
+        "title": "Consecutive Very Low Self-Reported Mood",
+        "explanation": "Mood level 1 (Very low) recorded on two consecutive entries. Shared privately with Doctor only.",
+        "next_step": "Private Doctor check-in recommended per mission behavioral health procedures.",
+        "source": "Self-report scale, prototype instrument v1"
+      },
+      "R-STR-01": {
+        "title": "Elevated Daily Stress Rating (>=70/100)",
+        "explanation": "Daily stress self-rating reached 70/100 or higher. Shared privately with Doctor only.",
+        "next_step": "Note operational workload context and repeat scheduled daily self-check.",
+        "source": "Self-report scale, prototype instrument v1"
+      },
+      "R-STR-02": {
+        "title": "Three Consecutive Days of Stress >= 70/100",
+        "explanation": "Self-reported stress >= 70/100 on three consecutive entries. Shared privately with Doctor only.",
+        "next_step": "Doctor notified privately for confidential procedural support review.",
+        "source": "Self-report scale, prototype instrument v1"
+      },
+      "R-ACT-01": {
+        "title": "Weekly Exercise Below NASA Reference Schedule",
+        "explanation": "Logged exercise days this week are fewer than the NASA ISS reference of 6 days/week (1.5 h resistive + 1 h aerobic).",
+        "next_step": "Neutral operational note only (rest days are part of the reference); log completed sessions.",
+        "source": "NASA NTRS 20110016265"
+      },
+      "R-DATA-01": {
+        "title": "Two Consecutive Days Without Daily Entries",
+        "explanation": "Crew member has two consecutive UTC days with no daily health entries.",
+        "next_step": "Verify device sync or connectivity status and resume scheduled daily logging.",
+        "source": "Prototype data-completeness rule"
+      },
+      "R-DATA-02": {
+        "title": "Weekly Hazard Entry Overdue",
+        "explanation": "Weekly mission hazard assessment is overdue by 1 day or more.",
+        "next_step": "Open Mission Risks or Calendar to enter the weekly Commander hazard log with instrument & UTC timestamp.",
+        "source": "Prototype data-completeness rule"
+      },
+      "R-REP-01": {
+        "title": "Crew Problem Report Submitted",
+        "explanation": "A crew member submitted a manual problem report for Doctor review.",
+        "next_step": "Doctor reviews the verbatim report text and contacts the crew member via approved mission channels.",
+        "source": "Manual crew problem report"
+      }
+    },
+    "protocols": {
+      "PRT-HR": {
+        "title": "Resting Heart Rate Protocol",
+        "purpose": "Capture standardized resting heart rate with context and approved instrument.",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Sit or float quietly relaxed for 5 minutes before measurement.",
+        "step2": "Use the approved crew medical device or wearable.",
+        "step3": "Record beats per minute (bpm) and select context (Resting / After exercise / Other).",
+        "step4": "Verify and record the UTC measurement timestamp."
+      },
+      "PRT-BP": {
+        "title": "Blood Pressure Protocol",
+        "purpose": "Measure systolic and diastolic blood pressure under standardized resting conditions.",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Rest quietly for 5 minutes before taking a reading.",
+        "step2": "Keep the cuffed arm supported at heart level.",
+        "step3": "Take two readings 1 minute apart and record the average or confirmed values.",
+        "step4": "Note the approved device ID and UTC measurement time."
+      },
+      "PRT-SLP": {
+        "title": "Morning Sleep Duration Log",
+        "purpose": "Log total nightly sleep duration upon waking (NASA schedules 8.5 h; adult consensus >= 7 h).",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Record total sleep hours shortly after waking.",
+        "step2": "Optionally record sleep start and end UTC times and source."
+      },
+      "PRT-MOOD": {
+        "title": "Daily Mood Self-Check",
+        "purpose": "Private self-report check-in (never shared with Commander or compared between crew).",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Select the 1–5 mood level that best fits today (1 = Very low, 5 = Very good).",
+        "step2": "Confirm UTC timestamp; entry remains strictly private."
+      },
+      "PRT-STR": {
+        "title": "Daily Stress Rating",
+        "purpose": "Private 0–100 self-rating scale (prototype instrument v1).",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Enter a 0 to 100 self-rating reflecting current perceived stress.",
+        "step2": "Confirm UTC timestamp; entry stays private to you and the Doctor."
+      },
+      "PRT-ACT": {
+        "title": "Countermeasure Exercise Log",
+        "purpose": "Log exercise sessions against the NASA ISS 2.5 h/day, 6 days/week countermeasure schedule.",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Select session type (Resistive / Aerobic / Other) and duration in minutes.",
+        "step2": "Mark completion status and record UTC timestamp."
+      },
+      "PRT-RAD": {
+        "title": "Weekly Radiation Dosimetry Protocol",
+        "purpose": "Record absorbed (mGy) and effective (mSv) radiation doses separately from approved dosimeters.",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Read total mission dose and recent dose rate from CAD and active monitor (ISS-RAD or equivalent).",
+        "step2": "Enter absorbed dose (mGy) and effective dose (mSv) in separate fields without conversion.",
+        "step3": "Note detector location/module, solar particle event status, and UTC timestamps."
+      },
+      "PRT-ENV": {
+        "title": "Weekly Cabin Atmosphere Sampling Protocol",
+        "purpose": "Verify 1-hour rolling ppCO2 average (>=5 samples, >=60 min span, max gap <=20 min) plus ppO2, pressure, temp/RH.",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Take ppCO2 readings every 15 minutes over at least 75 minutes (minimum 5 samples spanning >= 60 minutes).",
+        "step2": "Enter ppO2 (mmHg), total pressure (kPa), diluent %, temperature (C), RH %, and ventilation status."
+      },
+      "PRT-GRV": {
+        "title": "Weekly Altered Gravity & Countermeasure Review",
+        "purpose": "Log mission gravity state and weekly exercise countermeasure day counts.",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Record current gravity environment (e.g., Microgravity, Lunar 0.165g, Mars 0.38g).",
+        "step2": "Enter weekly scheduled exercise days completed (target 6 days/week with 1 rest day)."
+      },
+      "PRT-ISO": {
+        "title": "Weekly Isolation & Ground Contact Log",
+        "purpose": "Track ground-contact sessions and aggregate crew check-in participation without exposing individual psych data.",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Record number of ground-contact sessions completed this week.",
+        "step2": "Record days elapsed since last successful ground contact."
+      },
+      "PRT-DST": {
+        "title": "Weekly Distance & Communication Link Status",
+        "purpose": "Update spacecraft Earth distance (km) and link status to compute one-way and round-trip light time.",
+        "safety": "Prototype default protocol. Adapt to the devices and procedures approved for your mission.",
+        "step1": "Read spacecraft-Earth distance (km) from Mission control uplink or Onboard navigation display.",
+        "step2": "Record current communication status (Nominal / Degraded / Loss of signal)."
+      }
+    },
+    "achievements": {
+      "edu_radiation": {
+        "title": "Radiation Awareness",
+        "desc": "Master NASA career limits, SPE references, and CAD/ISS-RAD dosimetry principles.",
+        "hint": "Read the Radiation Awareness card and pass all 3 quiz questions."
+      },
+      "edu_sleep": {
+        "title": "Sleep Education",
+        "desc": "Understand 8.5 h scheduled sleep, 7 h adult clinical minimum, and orbital lighting.",
+        "hint": "Read the Sleep Education card and pass all 3 quiz questions."
+      },
+      "edu_exercise": {
+        "title": "Exercise Protocol Learning",
+        "desc": "Review the NASA ISS 2.5 h/day, 6 days/week resistive + aerobic countermeasure protocol.",
+        "hint": "Read the Exercise Protocol card and pass all 3 quiz questions."
+      },
+      "edu_readiness": {
+        "title": "Mission Readiness Learning",
+        "desc": "Learn GMT daily scheduling, ppCO2/ppO2 envelopes, and lunar/Mars light-time delays.",
+        "hint": "Read the Mission Readiness card and pass all 3 quiz questions."
+      },
+      "consistency_7": {
+        "title": "7-Day Logging Consistency",
+        "desc": "Complete 7 daily-entry days (all 6 daily indicators logged). Deferrals pause without penalty.",
+        "hint": "Store all 6 daily readings on 7 UTC days."
+      },
+      "consistency_14": {
+        "title": "14-Day Logging Consistency",
+        "desc": "Complete 14 daily-entry days without ranking or penalties.",
+        "hint": "Store all 6 daily readings on 14 UTC days."
+      },
+      "consistency_30": {
+        "title": "30-Day Logging Consistency",
+        "desc": "Complete 30 daily-entry days across the mission timeline.",
+        "hint": "Store all 6 daily readings on 30 UTC days."
+      },
+      "progress_25": {
+        "title": "Mission Quarter Milestone (25%)",
+        "desc": "Reach 25% of planned mission timeline duration.",
+        "hint": "Mission day reaches >= 25% of planned duration."
+      },
+      "progress_50": {
+        "title": "Mission Midpoint Milestone (50%)",
+        "desc": "Reach 50% of planned mission timeline duration.",
+        "hint": "Mission day reaches >= 50% of planned duration."
+      },
+      "progress_75": {
+        "title": "Mission Third Quarter Milestone (75%)",
+        "desc": "Reach 75% of planned mission timeline duration.",
+        "hint": "Mission day reaches >= 75% of planned duration."
+      },
+      "progress_100": {
+        "title": "Mission Timeline Complete (100%)",
+        "desc": "Reach 100% of planned mission timeline duration.",
+        "hint": "Mission day reaches >= 100% of planned duration."
+      }
+    },
+    "education": {
+      "edu_radiation": {
+        "title": "Radiation Awareness",
+        "summary": "NASA-STD-3001 establishes a universal 600 mSv career effective dose limit across age and sex, and ISS operations reference < 250 mSv 30-day limits for Solar Particle Events (SPE). Typical ISS effective dose is 0.2 to 0.5 mSv/day, while crew badge absorbed dose is usually below 0.3 mGy/day. Absorbed dose (Gy/mGy) and effective dose (Sv/mSv) measure different quantities and are never converted into each other. ISS-RAD alarms for crew shelter decisions, while CAD tracks personal mission dose and rate.",
+        "source": "NASA-STD-3001 Vol 1 & NASA SRAG",
+        "q1": {
+          "prompt": "What is NASA's universal career effective dose limit under NASA-STD-3001?",
+          "opt0": "250 mSv",
+          "opt1": "600 mSv",
+          "opt2": "1,000 mSv",
+          "exp": "NASA-STD-3001 sets a universal 600 mSv career effective dose limit independent of age and sex."
+        },
+        "q2": {
+          "prompt": "Should absorbed dose (mGy) and effective dose (mSv) be converted into each other in ASTRA?",
+          "opt0": "No — they measure distinct physical and biological quantities and stay separate.",
+          "opt1": "Yes — multiply mGy by 10 to obtain mSv.",
+          "opt2": "Only during a Solar Particle Event.",
+          "exp": "Gy/mGy (absorbed) and Sv/mSv (effective/equivalent) depend on radiation weighting factors and are always kept separate."
+        },
+        "q3": {
+          "prompt": "Which instrument primarily serves an alarm role for crew shelter decisions?",
+          "opt0": "Passive badge dosimeter",
+          "opt1": "Wearable heart rate monitor",
+          "opt2": "ISS-RAD (Radiation Assessment Detector)",
+          "exp": "ISS-RAD is an active detector with an alarm role for SPE shelter decisions and trending."
+        }
+      },
+      "edu_sleep": {
+        "title": "Sleep Education",
+        "summary": "NASA schedules an 8.5-hour sleep period for crew members, while the AASM/SRS 2015 consensus recommends adults regularly sleep at least 7 hours per night. In LEO, stations experience roughly 16 sunrises and sunsets per day, so spacecraft lighting systems simulate a 24-hour day-night cycle and consistent routines support alertness and cognition.",
+        "source": "AASM/SRS 2015 & NASA-STD-3001",
+        "q1": {
+          "prompt": "What is the minimum nightly sleep recommended for adults by AASM/SRS 2015?",
+          "opt0": "5.5 hours",
+          "opt1": "7.0 hours",
+          "opt2": "10.0 hours",
+          "exp": "AASM/SRS 2015 recommends 7 or more hours per night on a regular basis (while NASA schedules an 8.5 h period)."
+        },
+        "q2": {
+          "prompt": "Approximately how many sunrises and sunsets does a LEO ISS-class station see each day?",
+          "opt0": "1 sunrise/sunset",
+          "opt1": "6 sunrises/sunsets",
+          "opt2": "About 16 sunrises/sunsets",
+          "exp": "At ~92 minutes per orbit, LEO stations experience ~16 sunrises/sunsets per 24-hour UTC day."
+        },
+        "q3": {
+          "prompt": "How long is NASA's scheduled daily sleep period?",
+          "opt0": "8.5 hours",
+          "opt1": "6.0 hours",
+          "opt2": "11.0 hours",
+          "exp": "NASA schedules an 8.5-hour sleep period for crew members."
+        }
+      },
+      "edu_exercise": {
+        "title": "Exercise Protocol Learning",
+        "summary": "Per NASA NTRS 20110016265, ISS countermeasure exercise blocks are scheduled for 2.5 hours per day, 6 days per week (1.5 hours resistive + 1.0 hour aerobic, with 1 scheduled rest day). This routine helps protect muscle mass, bone density, and aerobic capacity in microgravity.",
+        "source": "NASA NTRS 20110016265",
+        "q1": {
+          "prompt": "How many days per week is the ISS countermeasure exercise block scheduled, including rest days?",
+          "opt0": "7 days/week with zero rest days",
+          "opt1": "6 days/week with 1 rest day",
+          "opt2": "2 days/week",
+          "exp": "NASA ISS countermeasure reference schedules 6 days/week with 1 planned rest day."
+        },
+        "q2": {
+          "prompt": "What is the reference daily countermeasure breakdown?",
+          "opt0": "1.5 hours resistive + 1.0 hour aerobic (2.5 hours total)",
+          "opt1": "0.5 hours total stretching only",
+          "opt2": "4.0 hours high-intensity sprint work",
+          "exp": "The reference block totals 2.5 hours/day: 1.5 h resistive plus 1 h aerobic exercise."
+        },
+        "q3": {
+          "prompt": "Does ASTRA penalize crew points for rest days or deferrals?",
+          "opt0": "Yes, points are deducted automatically.",
+          "opt1": "Yes, rest days trigger a commander alert.",
+          "opt2": "No — rest days and deferrals are never penalized.",
+          "exp": "ASTRA prototype points never penalize rest days, deferrals, or health/exercise values."
+        }
+      },
+      "edu_readiness": {
+        "title": "Mission Readiness Learning",
+        "summary": "Station crew schedules align on UTC/GMT (wake near 06:00 GMT, scheduled sleep 8.5 h). Environmental guidelines target normoxia ppO2 between 145 and 155 mmHg and verify 1-hour rolling ppCO2 <= 3.0 mmHg [V2 6004]. Signal light-time delay reaches ~1.28 s one-way at the Moon (384,400 km) and roughly 3 to 22 minutes one-way during Mars missions.",
+        "source": "NASA-STD-3001 Vol 2 & OCHMO",
+        "q1": {
+          "prompt": "What is the NASA [V2 6004] 1-hour average ppCO2 criterion threshold?",
+          "opt0": "3.0 mmHg",
+          "opt1": "15.0 mmHg",
+          "opt2": "0.1 mmHg",
+          "exp": "NASA-STD-3001 [V2 6004] triggers an alert when a verified 1-hour average ppCO2 exceeds 3.0 mmHg."
+        },
+        "q2": {
+          "prompt": "What is the approximate one-way light time between Earth and the Moon (~384,400 km)?",
+          "opt0": "0.0013 seconds",
+          "opt1": "1.28 seconds",
+          "opt2": "22 minutes",
+          "exp": "384,400 km / 299,792.458 km/s is approximately 1.28 seconds one-way (~2.56 s round trip)."
+        },
+        "q3": {
+          "prompt": "What is NASA's normoxia target range for cabin ppO2 [V2 6003]?",
+          "opt0": "40 to 60 mmHg",
+          "opt1": "300 to 400 mmHg",
+          "opt2": "145 to 155 mmHg",
+          "exp": "NASA-STD-3001 [V2 6003] specifies a normoxia ppO2 target window of 145 to 155 mmHg."
+        }
+      }
+    }
+  },
+  "alerts_titles": {
+    "R-HR-01": "Resting heart rate outside 60–100 bpm ({value} {unit})",
+    "R-HR-02": "Consecutive-day resting HR outside 60–100 bpm ({value} {unit})",
+    "R-BP-01": "Elevated blood pressure reference ({systolic}/{diastolic} {unit})",
+    "R-BP-02": "Stage 2 blood pressure reference ({systolic}/{diastolic} {unit})",
+    "R-BP-03": "HIGH PRIORITY blood pressure (>180/120 mmHg): {systolic}/{diastolic} {unit}",
+    "R-BP-04": "Low blood pressure reference ({systolic}/{diastolic} {unit})",
+    "R-SLP-01": "Sleep below 7.0 h clinical reference ({hours} {unit})",
+    "R-SLP-02": "Three consecutive nights below 7.0 h (latest {hours} {unit})",
+    "R-SLP-03": "Downward sleep trend over {steps} consecutive steps ({hours} {unit})",
+    "R-MOOD-01": "Very low mood reported for {days} consecutive days (private)",
+    "R-STR-01": "Stress rating >= 70/100 ({score} {unit})",
+    "R-STR-02": "Stress >= 70/100 for {days} consecutive days ({score} {unit})",
+    "R-ACT-01": "Weekly exercise below NASA 6-day reference ({days}/{target} days)",
+    "R-RAD-01": "Absorbed dose rate > 0.4 mGy/day ({value} {unit})",
+    "R-RAD-02": "Radiation dose margin reached >= 50% ({percent}%)",
+    "R-RAD-03": "Radiation dose margin reached >= 80% ({percent}%)",
+    "R-RAD-04": "NASA radiation effective dose limit reached ({careerMsv} mSv career / {day30Msv} mSv 30d)",
+    "R-RAD-05": "HIGH PRIORITY: Solar Particle Event (SPE) in progress",
+    "R-RAD-05.doctor_info": "INFORMATION notice: Solar Particle Event (SPE) in progress (Commander notified)",
+    "R-ENV-01": "ALERT: Verified 1-hour average ppCO2 > 3.0 mmHg ({value} {unit})",
+    "R-ENV-02": "Single ppCO2 sample > 3.0 mmHg ({value} {unit}; 1-hour average unverified)",
+    "R-ENV-03": "7-day mean ppCO2 > 2.5 mmHg ({value} {unit})",
+    "R-ENV-04": "Cabin ppO2 outside 145–155 mmHg ({value} {unit})",
+    "R-ENV-05": "Cabin pressure or diluent outside NASA limits ({pressure} kPa / {diluent}%)",
+    "R-ENV-06.info": "Temp/RH outside performance zone ({tempC} C, {rhPercent}% RH) but within health limits",
+    "R-ENV-06.alert": "ALERT: Temp/RH outside crew health limits ({tempC} C, {rhPercent}% RH)",
+    "R-ENV-07": "Cabin ventilation status: {status}",
+    "R-GRV-01": "Weekly exercise days ({days}/{target}) below NASA 6-day reference",
+    "R-ISO-01": "Ground contact interval > 7 days ({days} days)",
+    "R-DST-01": "Communication link Degraded",
+    "R-DST-02": "ALERT: Loss of signal on communication link",
+    "R-REP-01.standard": "Crew problem report from {subjectName}",
+    "R-REP-01.urgent": "URGENT crew problem report from {subjectName}"
+  }
+}

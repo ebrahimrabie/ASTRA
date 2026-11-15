@@ -1,0 +1,6 @@
+{
+  "name": "ASTRA — Adaptive Spaceflight Tracking & Risk Assessment",
+  "description": "Read-only decision-support prototype for astronaut health and mission risk monitoring. Not a validated clinical system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
