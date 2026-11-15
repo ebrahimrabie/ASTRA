@@ -9,6 +9,8 @@ ASTRA is a read-only decision-support **prototype** for astronaut health and mis
 
 ## Setup & Running
 
+you need to download node.js first
+
 1.get clone:
    ```bash
    git clone https://github.com/ebrahimrabie/ASTRA.git
